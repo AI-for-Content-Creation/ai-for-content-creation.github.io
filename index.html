@@ -233,29 +233,22 @@
         <h1>2025</h1>
     </div> -->
 
-    <!--
     <div class="container" id="awards">
         <hr>
-        <h3>Awards</h3>
+        <h3>2025 Awards</h3>
         <ul>
-        {% for item in site.data.papers_2024 %}
+        {% for item in site.data.papers_2025 %}
             {% if item.award == "bestpaper" %}
                 <li><h5>Best paper</h5> {% include paperitem.html item=item %}</li><br>
             {% endif %}
         {% endfor %}
-        {% for item in site.data.papers_2024 %}
-            {% if item.award == "bestpaperrunnerup" %}
-                <li><h5>Best paper (runner up)</h5> {% include paperitem.html item=item %}</li><br>
-            {% endif %}
-        {% endfor %}
-        {% for item in site.data.papers_2024 %}
-            {% if item.award == "bestposter" %}
-                <li><h5>Best poster</h5> {% include paperitem.html item=item %}</li>
+        {% for item in site.data.papers_2025 %}
+            {% if item.award == "bestpresentation" %}
+                <li><h5>Best presentation (shared)</h5> {% include paperitem.html item=item %}</li><br>
             {% endif %}
         {% endfor %}
         </ul>
     </div>
-    -->
 
     <div class="container" id="schedule">
         <hr>
