@@ -1,0 +1,55 @@
+p {
+    text-align: justify;
+    -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+    hyphens: auto;
+}
+
+ol.carousel-indicators li{
+    border: 2px solid black;
+}
+
+.carousel-control-prev-icon{
+    border: 2px solid black;
+    background-color: gray;
+}
+
+.carousel-control-next-icon{
+    border: 2px solid black;
+    background-color: gray;
+}
+
+.carousel-caption h5{
+    border: 2px solid black;
+    background: white;
+    opacity: 80%;
+}
+
+.carousel-caption p{
+    border: 2px solid black;
+    background: white;
+    opacity: 80%;
+}
+
+.noindent{
+    padding-left: 0;
+} 
+
+/* 
+.brownbrown {
+    color: #4E3629;
+}
+
+.brownred {
+    color: #C00404;
+} */
+
+.logo {
+    width: 20em;
+    padding: 1em 1em 1em 1em;
+}
+
+video {
+    vertical-align: middle;
+    border-style: none;
+}

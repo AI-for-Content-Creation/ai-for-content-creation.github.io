@@ -1,0 +1,2703 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="css/theme_1610153848925.css" rel="stylesheet"> <!-- Via Themestr.app -->
+    <link href="css/ai4cc.css" rel="stylesheet">
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <!-- Favicons -->
+    <!-- Sizes from here: https://www.emergeinteractive.com/insights/detail/The-Essentials-of-FavIcons/ -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="./images/favicons/favicon-128x128.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="./images/favicons/favicon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./images/favicons/favicon-192x192.png">
+
+    <meta property="og:image" content="https://www.ai4cc.net/images/sm-card.jpg" />
+
+    <title>AI for Content Creation Workshop</title>
+  </head>
+
+  <body>
+    
+    <header class="bg-light text-dark py-5">
+    <div class="container text-center">
+        <h1>AI for Content Creation Workshop</h1>
+        <h3>June 12th @ CVPR 2025</h3>
+        <h4>Karl F. Dean Grand Ballroom A1, 4th Floor, Music City Center, Nashville, TN, USA
+        </h4>
+        <h4>Remote (Zoom): <a href="https://cvpr.thecvf.com/virtual/2025/workshop/32328">Via CVPR site</a></h4> 
+    </div>
+    </header>
+
+    <!-- A grey horizontal navbar that becomes vertical on small screens -->
+    <nav class="navbar sticky-top navbar-expand-sm" style="margin-top:2em; background: #FFF;">
+        <div class="container">
+            <a class="navbar-brand" href="#">AI4CC 2025</a>
+            
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link link-primary" href="#summary">Summary</a>
+            </li>
+            <!--
+            <li class="nav-item">
+                <a class="nav-link link-primary" href="#awards">Awards</a>
+            </li>
+            -->
+            <li class="nav-item">
+                <a class="nav-link link-primary" href="#schedule">Schedule</a>
+            </li>
+            <!--
+            <li class="nav-item">
+                <a class="nav-link link-primary" href="#papers">Papers</a>
+            </li>
+            -->
+            <!--
+            <li class="nav-item">
+                <a class="nav-link link-primary" href="#submission">Submission</a>
+            </li>
+            -->
+            <li class="nav-item">
+                <a class="nav-link link-primary" href="#previousworkshops">Previous Workshops</a>
+            </li>    
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container" style="margin-top: 2em">
+        <div id="carouselTop" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+            
+            
+                <li data-target="#carouselTop" data-slide-to="0" class="active"></li>
+            
+                <li data-target="#carouselTop" data-slide-to="1" ></li>
+            
+                <li data-target="#carouselTop" data-slide-to="2" ></li>
+            
+                <li data-target="#carouselTop" data-slide-to="3" ></li>
+            
+                <li data-target="#carouselTop" data-slide-to="4" ></li>
+            
+                <li data-target="#carouselTop" data-slide-to="5" ></li>
+            
+                <li data-target="#carouselTop" data-slide-to="6" ></li>
+            
+                <li data-target="#carouselTop" data-slide-to="7" ></li>
+            
+                <li data-target="#carouselTop" data-slide-to="8" ></li>
+            
+                <li data-target="#carouselTop" data-slide-to="9" ></li>
+            
+                <li data-target="#carouselTop" data-slide-to="10" ></li>
+            
+                <li data-target="#carouselTop" data-slide-to="11" ></li>
+            
+                <li data-target="#carouselTop" data-slide-to="12" ></li>
+            
+                <li data-target="#carouselTop" data-slide-to="13" ></li>
+            
+            </ol>
+
+            <div class="carousel-inner text-center">
+            
+                <div class="carousel-item active">
+                <img height="300px" src="./images/papers/ai4cc2024_Jeong_visual-style-prompting.jpg" alt="Visual Style Prompting with Swapping Self-Attention">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-dark text-center">Jeong et al., AI4CC 2024</h5>
+                    <p class="text-dark text-center">Visual Style Prompting with Swapping Self-Attention</p>
+                </div>
+                </div>
+            
+                <div class="carousel-item ">
+                <img height="300px" src="./images/papers/ai4cc2024_Zheng_towards-safer-ai-content-creation.jpg" alt="Towards Safer AI Content Creation by Immunizing Text-to-image Models">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-dark text-center">Zheng et al., AI4CC 2024</h5>
+                    <p class="text-dark text-center">Towards Safer AI Content Creation by Immunizing Text-to-image Models</p>
+                </div>
+                </div>
+            
+                <div class="carousel-item ">
+                <img height="300px" src="./images/papers/ai4cc2024_Barquero_seamless-human-motion-composition.jpg" alt="Seamless Human Motion Composition with Blended Positional Encodings">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-dark text-center">Barquero et al., AI4CC 2024</h5>
+                    <p class="text-dark text-center">Seamless Human Motion Composition with Blended Positional Encodings</p>
+                </div>
+                </div>
+            
+                <div class="carousel-item ">
+                <img height="300px" src="./images/papers/ai4cc2023_Matsunaga_fine-grained-image-editing.jpg" alt="Fine-grained Image Editing by Pixel-wise Guidance Using Diffusion Models">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-dark text-center">Matsunaga et al., AI4CC 2023</h5>
+                    <p class="text-dark text-center">Fine-grained Image Editing by Pixel-wise Guidance Using Diffusion Models</p>
+                </div>
+                </div>
+            
+                <div class="carousel-item ">
+                <img height="300px" src="./images/papers/ai4cc2023_Zhang_text-to-image-editing.jpg" alt="Text-to-image Editing by Image Information Removal">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-dark text-center">Zhang et al., AI4CC 2023</h5>
+                    <p class="text-dark text-center">Text-to-image Editing by Image Information Removal</p>
+                </div>
+                </div>
+            
+                <div class="carousel-item ">
+                <img height="300px" src="./images/papers/jain_ai4cc2022_dream-fields.jpg" alt="Zero-Shot Text-Guided Object Generation with Dream Fields">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-dark text-center">Jain et al., AI4CC 2022</h5>
+                    <p class="text-dark text-center">Zero-Shot Text-Guided Object Generation with Dream Fields</p>
+                </div>
+                </div>
+            
+                <div class="carousel-item ">
+                <img height="300px" src="./images/papers/lee_ai4cc2022_fix-the-noise.jpg" alt="Fix the Noise: Disentangling Source Feature for Transfer Learning of StyleGAN">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-dark text-center">Lee, Lee, Kim, Choi, & Kim, AI4CC 2022</h5>
+                    <p class="text-dark text-center">Fix the Noise: Disentangling Source Feature for Transfer Learning of StyleGAN</p>
+                </div>
+                </div>
+            
+                <div class="carousel-item ">
+                <img height="300px" src="./images/papers/jang_ai4cc2022_rics.jpg" alt="RiCS: A 2D Self-Occlusion Map for Harmonizing Volumetric Objects">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-dark text-center">Jang, Villegas, Yang, Ceylan, Sun, & Lee, AI4CC 2022</h5>
+                    <p class="text-dark text-center">RiCS: A 2D Self-Occlusion Map for Harmonizing Volumetric Objects</p>
+                </div>
+                </div>
+            
+                <div class="carousel-item ">
+                <img height="300px" src="./images/papers/poirier-ginter_ai4cc2022_overparameterization.jpg" alt="Overparameterization Improves StyleGAN Inversion">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-dark text-center">Poirier-Ginter, Alexandre Lessard, Ryan Smith, Jean-François Lalonde, AI4CC 2022</h5>
+                    <p class="text-dark text-center">Overparameterization Improves StyleGAN Inversion</p>
+                </div>
+                </div>
+            
+                <div class="carousel-item ">
+                <img height="300px" src="./images/papers/jahn_ai4cc2021_high-res-complex-transformers.jpg" alt="High-Resolution Complex Scene Synthesis with Transformers">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-dark text-center">Jahn et al., AI4CC 2021</h5>
+                    <p class="text-dark text-center">High-Resolution Complex Scene Synthesis with Transformers</p>
+                </div>
+                </div>
+            
+                <div class="carousel-item ">
+                <img height="300px" src="./images/papers/rombach_ai4cc2020_network-fusion_exemplarguided_crop.jpg" alt="Network Fusion for Content Creation with Conditional INNs">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-dark text-center">Rombach, Esser, and Ommer, AI4CC 2020</h5>
+                    <p class="text-dark text-center">Network Fusion for Content Creation with Conditional INNs</p>
+                </div>
+                </div>
+            
+                <div class="carousel-item ">
+                <img height="300px" src="./images/papers/Cha_ai4cc2020_few-shot-font-generation.jpg" alt="Toward High-quality Few-shot Font Generation with Dual Memory">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-dark text-center">Cha et al., AI4CC 2020</h5>
+                    <p class="text-dark text-center">Toward High-quality Few-shot Font Generation with Dual Memory</p>
+                </div>
+                </div>
+            
+                <div class="carousel-item ">
+                <img height="300px" src="./images/papers/sylvain_ai4cc2020_object-centric_image_generation.jpg" alt="Object-Centric Image Generation from Layouts">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-dark text-center">Sylvain et al., AI4CC 2020</h5>
+                    <p class="text-dark text-center">Object-Centric Image Generation from Layouts</p>
+                </div>
+                </div>
+            
+            </div>
+
+            <a class="carousel-control-prev" href="#carouselTop" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselTop" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <br><br>
+    </div>
+
+
+    <div class="container" id="summary">
+        <h3>Summary</h3>
+        <p>
+            Content creation plays a crucial role in domains such as photography, videography, virtual reality, gaming, art, design, fashion, and advertising design. Recent progress in machine learning and AI has transformed hours of manual, painstaking content creation work into minutes or seconds of automated or interactive work. For instance, generative modeling approaches can produce photorealistic images of 2D and 3D items such as humans, landscapes, interior scenes, virtual environments, clothing, or even industrial designs. New large text, image, and video models that share latent spaces let us imaginatively describe scenes and have them realized automatically&mdash;with new multi-modal approaches able to generate consistent video and audio across long timeframes. Such approaches can also super-resolve and super-slomo videos, interpolate and extrapolate between photos and videos with intermediate novel views, decompose scene objects and appearance, and transfer styles to convincingly render and reinterpret content. Learned priors of images, videos, and 3D data can also be combined with explicit appearance and geometric constraints, perceptual understanding, or even functional and semantic constraints of objects. While often creating awe-inspiring artistic images, such techniques offer unique opportunities for generating diverse synthetic training data for downstream computer vision tasks, both in 2D, video, and 3D domains.
+        </p>
+        <p>
+            The AI for Content Creation workshop explores this exciting and fast-moving research area. We bring together invited speakers of world-class expertise in content creation, up-and-coming researchers, and authors of submitted workshop papers, to engage in a day filled with learning, discussion, and network building.
+        </p>
+
+        <p>
+        Welcome! - <br>
+        
+        
+            
+                <a class="link-primary" href="https://deqings.github.io/">Deqing Sun (Google)</a> 
+                
+                
+                
+                <a href="https://twitter.com/DeqingSun"><img src="images/logos/X_logo_black.svg" width=18px></a> 
+                
+                
+                <br>        
+            
+        
+            
+                <a class="link-primary" href="https://lingjie0206.github.io/">Lingjie Liu (University of Pennsylvania)</a> 
+                
+                
+                <a href="https://bsky.app/profile/lingjieliu.bsky.social"><img src="images/logos/Bluesky_Logo.svg" width=18px></a> 
+                
+                
+                
+                <br>        
+            
+        
+            
+                <a class="link-primary" href="https://krsingh.cs.ucdavis.edu/">Krishna Kumar Singh (Adobe)</a> 
+                
+                
+                <a href="https://bsky.app/profile/krishna-cv.bsky.social"><img src="images/logos/Bluesky_Logo.svg" width=18px></a> 
+                
+                
+                
+                <br>        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                <a class="link-primary" href="http://www.lujiang.info/">Lu Jiang (ByteDance)</a> 
+                
+                
+                
+                <a href="https://twitter.com/roadjiang"><img src="images/logos/X_logo_black.svg" width=18px></a> 
+                
+                
+                <br>        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                <a class="link-primary" href="https://www.cs.cmu.edu/~junyanz/">Jun-Yan Zhu (Carnegie Mellon University)</a> 
+                
+                
+                <a href="https://bsky.app/profile/junyanz.bsky.social"><img src="images/logos/Bluesky_Logo.svg" width=18px></a> 
+                
+                
+                
+                <br>        
+            
+        
+            
+                <a class="link-primary" href="https://www.jamestompkin.com/">James Tompkin (Brown University)</a> 
+                
+                
+                <a href="https://bsky.app/profile/jamestompkin.bsky.social"><img src="images/logos/Bluesky_Logo.svg" width=18px></a> 
+                
+                
+                
+                <br>        
+            
+        
+
+        </p>
+    </div><div class="container text-center">
+        <hr>
+        <video src="images/famous/adobe_firefly.mp4" width="25%" autoplay loop style="padding: 1em 0em 1em 0em"></video>
+        <img src="images/famous/genie2.webp" width="33%" style="padding: 1em 0em 1em 0em">
+        <img src="images/famous/sora.jpg" width="35%" style="padding: 1em 0em 1em 0em">
+        <br>
+        <em>Firefly Video (Adobe, 2025), Genie 2 (DeepMind, 2024), SORA (OpenAI, 2024).</em>
+    </div>
+
+    <!--
+    <div class="container" id="submission">
+        <hr>
+        <h3>Author and Submission Instructions</h3>
+        <p>
+            We call for papers (8 pages not including references) and extended abstracts (4 pages not including references) to be presented at the AI for Content Creation Workshop at CVPR. Papers and extended abstracts will be peer reviewed in a double blind fashion. Authors of accepted papers will be asked to post their submissions on arXiv. These papers will not be included in the proceedings of CVPR, but authors should be aware that computer vision conferences consider peer-reviewed works with >4-pages to be in violation of double submission policies, e.g., both <a href="https://cvpr.thecvf.com/Conferences/2025/AuthorGuidelines">CVPR</a> and <a href="https://eccv2024.ecva.net/Conferences/2024/SubmissionPolicies">ECCV</a>. We welcome both novel works and works in progress that have not been published elsewhere.
+        </p>
+
+        <p>
+            In the interests of fostering a free exchange of ideas, we will also accept for poster presentation a selection of papers that have been recently published elsewhere, including at CVPR 2025; these will not be peer reviewed again, and are not bound to the same anonymity and page limits. A jury of organizers will select these papers.
+        </p>
+        
+        <p>
+        Paper submissions for 4- and 8-page novel work are <em>double blind</em> and in the <a href="https://github.com/cvpr-org/author-kit/">CVPR template</a>. You are welcome to include appendices in the main PDF, and upload supplemental material such as videos. There are <em>no dual submissions</em>&mdash;please do not submit work for peer review to two workshops simultaneously, nor submit work that is currently in review at another conference (like ICCV/ECCV).
+        </p>
+
+        <p>
+        Paper submission deadline: 21st March 2025 11:59 PM PST<br>
+        Acceptance notification: 25th April 2025<br>
+        Submission Website: CMT3 - <a href="https://cmt3.research.microsoft.com/AI4CC2025/">https://cmt3.research.microsoft.com/AI4CC2025/</a>
+        </p>
+
+        <p>
+        The best student papers will be acknowledged with a prize.
+        </p>
+
+        <p>
+        <em>Reviewing:</em> We accept self-nominations for reviewers: <a href="https://docs.google.com/forms/d/e/1FAIpQLSebt-nqHRZkzS5WiAyr_zeDBMrKLkDItRujS0mSIzn1hgsn-Q/viewform">Apply here (Google Form)</a>.<br>
+        This is an excellent opportunity for junior researchers to gain experience in reviewing. Experienced reviewers can also apply to be a meta-reviewer (similar to Area Chair), again to gain experience. Meta-reviewers will handle at most 5 papers. Thank you!
+        </p>
+        
+        <p>
+        <em>Travel awards (2025):</em> We have travel awards to sponsor under-represented students to attend the workshop. Students will also have an opportunity to interact with invited workshop speakers at a social occasion. We have two $2500 cash awards. <a href="https://docs.google.com/forms/d/e/1FAIpQLScUmoPFMipsKulIgH6yMX8KV2YKDKNRi7SNrgleCsKfy-pLHA/viewform">Apply here (Google Form).</a> To be considered, fill the form before April 15th, 2025, anywhere on earth.
+        </p>
+
+        <h4>Topics</h4>
+        <p>
+        We seek contributions across content creation, including but not limited to techniques for content creation:
+        </p>
+        <ul>
+            <li>Generative models for image/video/3D synthesis</li>
+            <li>Image/video/3D editing of any kind - inpainting/extrapolation/style</li>
+            <li>Domain transfer, e.g., image-to-image or video-to-video techniques</li>
+            <li>Multi-modal with text, audio, motion, e.g., text-to-image creation</li>
+        </ul>
+        
+        <p>
+        We also seek contributions in domains and applications for content creation:
+        </p>
+        <ul>
+            <li>Image and video synthesis for enthusiast, VFX, architecture, advertisements, art, ...</li>
+            <li>2D/3D graphic design</li>
+            <li>Text and typefaces</li>
+            <li>Design for documents, Web</li>
+            <li>Fashion, garments, and outfits</li>
+            <li>Novel applications and datasets</li>
+        </ul>
+    </div>
+    -->
+<!-- 
+    <div class="container">
+        <hr>
+        <h1>2025</h1>
+    </div> -->
+
+    <div class="container" id="awards">
+        <hr>
+        <h3>2025 Awards</h3>
+        <ul>
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                <li><h5>Best paper</h5> 
+
+
+    <a href="https://arxiv.org/abs/2501.01949">VideoLifter: Lifting Videos to 3D with Fast Hierarchical Stereo Alignment</a>
+
+<br>
+
+    Wenyan Cong (University of Texas at Austin); Hanqing Zhu (University of Texas at Austin); Kevin  Wang  (University of Texas at Austin); Jiahui Lei (University of Pennsylvania); Colton Stearns (Stanford University); Yuanhao Cai (Johns Hopkins University); Dilin Wang (Meta); Rakesh Ranjan (Meta); Matt Feiszli (Meta); Leonidas Guibas (Stanford University); Atlas Wang (University of Texas at Austin); Weiyao Wang (Meta); Zhiwen Fan (University of Texas at Austin)
+
+
+
+    <a href="https://videolifter.github.io/">[https://videolifter.github.io/]</a>
+
+
+</li><br>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                <li><h5>Best presentation (shared)</h5> 
+
+
+    <a href="https://www.arxiv.org/abs/2502.12632">MALT Diffusion: Memory-Augmented Latent Transformers for Any-Length Video Generation</a>
+
+<br>
+
+    Sihyun Yu (KAIST); Meera Hahn (Google DeepMind); Dan Kondratyuk (Luma AI); Jinwoo Shin (KAIST); Agrim Gupta (Google DeepMind); José Lezama (Google DeepMind); Irfan Essa (Google DeepMind); David Ross (Google DeepMind); Jonathan Huang (Scaled Foundations)
+
+
+
+
+</li><br>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                <li><h5>Best presentation (shared)</h5> 
+
+
+    <a href="https://arxiv.org/abs/2504.10466">Art3D: Training-Free 3D Generation from Flat-Colored Illustration</a>
+
+<br>
+
+    Xiaoyan Cong (Brown University); Jiayi Shen (Brown University); Zekun Li (Brown University); Rao Fu (Brown University); Tao Lu (Brown University); Srinath Sridhar (Brown University)
+
+
+
+    <a href="https://joy-jy11.github.io/">[https://joy-jy11.github.io/]</a>
+
+
+</li><br>
+            
+        
+            
+        
+            
+        
+            
+                <li><h5>Best presentation (shared)</h5> 
+
+
+    <a href="https://arxiv.org/abs/2409.00313">Training-Free Sketch-Guided Diffusion with Latent Optimization</a>
+
+<br>
+
+    Sandra Zhang Ding (The University of Tokyo); Kiyoharu AIZAWA (The University of Tokyo); Jiafeng MAO (The University of Tokyo)
+
+
+
+
+</li><br>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+        </ul>
+    </div>
+
+    <div class="container" id="schedule">
+        <hr>
+        <h3>2025 Schedule</h3>
+        
+        <!--<h3>2025 Schedule&mdash;<a href="Coming Soon">Video Recording</a></h3>
+        
+        <div id="videoplayer"></div>
+        <p><em>Click ▶ to jump to each talk!</em></p>
+        -->
+
+        Morning session:<br>
+        
+
+        <table class="table table-sm table-striped">
+            <thead>
+                <tr>
+                    <th scope="col" style="width:2%"><!--Play--></th>
+                    <th scope="col" style="width:5%">Time CDT</th>
+                    <th scope="col" style="width:83%"></th>
+                    <th scope="col" style="width:10%"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <!--<button type="button" class="btn btn-outline-secondary btn-sm" onclick="videoplayer.loadVideoById('e-ETzY7qRyQ')">▶</button>-->
+                    </td>
+                    <td>08:45</td>
+                    <td>Welcome and introductions</td>
+                    <td>👋</td>
+                </tr>
+                <tr>
+                    <!---0900-->
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+<td>
+  
+</td> 
+<td>
+  09:00
+</td>
+<td>
+  
+    <a href="https://graphics.stanford.edu/~maneesh/">Maneesh Agrawala</a>
+  
+  
+    &nbsp;(Stanford University)
+  
+</td>
+<td>
+  
+    <a href="https://bsky.app/profile/magrawala.bsky.social" target="_blank" rel="noopener noreferrer">
+      <img src="/images/logos/Bluesky_Logo.svg" alt="Bluesky" style="width: 20px; height: 20px;">
+    </a>
+  
+</td>
+
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+                    
+                </tr>
+                <tr>
+                    <!---0930-->
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+<td>
+  
+</td> 
+<td>
+  09:30
+</td>
+<td>
+  
+    <a href="https://kai-46.github.io/website/">Kai Zhang</a>
+  
+  
+    &nbsp;(Adobe)
+  
+</td>
+<td>
+  
+</td>
+
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+                                        
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>10:00</td>
+                    <td>Coffee break</td>
+                    <td>☕</td>
+                </tr>
+                <tr>
+                    <!---1030-->
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+<td>
+  
+</td> 
+<td>
+  10:30
+</td>
+<td>
+  
+    <a href="https://scholar.google.com/citations?user=LQvi5XAAAAAJ">Charles Herrmann</a>
+  
+  
+    &nbsp;(Google)
+  
+</td>
+<td>
+  
+</td>
+
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+                                     
+                </tr>
+                <tr>
+                    <!---1100-->
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+<td>
+  
+</td> 
+<td>
+  11:00
+</td>
+<td>
+  
+    <a href="https://markboss.me/">Mark Boss</a>
+  
+  
+    &nbsp;(Stability AI)
+  
+</td>
+<td>
+  
+</td>
+
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+                                        
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>11:30</td>
+                    <td>Poster session 1 - ExHall D #412-431
+                        <!-- In submitted order -->
+                        <!-- Papers 
+                        <br><em>Papers</em> -->
+                        <ol class="noindent" start="412">
+                            
+                                
+                            
+                                
+                                    <li> 
+
+
+    <a href="https://arxiv.org/abs/2506.00607">Parallel Rescaling: Rebalancing Consistency Guidance for Personalized Diffusion Models</a>
+
+<br>
+
+    JungWoo Chae (Nexon Korea); Jiyoon Kim (LGCNS); Sangheum Hwang (Seoul National University of Science and Technology)
+
+
+
+
+ </li>
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                                    <li> 
+
+
+    <a href="https://arxiv.org/abs/2505.03394">EOPose : Exemplar-based object reposing using Generalized Pose Correspondences</a>
+
+<br>
+
+    Sarthak Mehrotra (Indian Institute of Technology Bombay); Rishabh Jain (Adobe); Mayur Hemani (Adobe); Balaji Krishnamurthy (Adobe); Mausoom Sarkar (Adobe)
+
+
+
+
+ </li>
+                                
+                            
+                                
+                                    <li> 
+
+
+    <a href="https://arxiv.org/abs/2411.15279">Don't Mesh with Me: Generating Constructive Solid Geometry Instead of Meshes by Fine-Tuning a Code-Generation LLM</a>
+
+<br>
+
+    Maximilian Mews (HU Berlin); Ansar Aynetdinov (HU Berlin); Vivian Schiller (RWTH Aachen); Peter Eisert (HU Berlin); Alan Akbik (HU Berlin)
+
+
+
+
+ </li>
+                                
+                            
+                                
+                            
+                                
+                                    <li> 
+
+
+    <a href="http://arxiv.org/abs/2505.19868">Harnessing the Power of Training-Free Techniques in Text-to-2D Generation for Text-to-3D Generation via Score Distillation Sampling</a>
+
+<br>
+
+    Junhong Lee (POSTECH); Seungwook Kim (POSTECH, bytedance); Minsu Cho (POSTECH)
+
+
+
+
+ </li>
+                                
+                            
+                                
+                            
+                                
+                                    <li> 
+
+
+    <a href="https://www.arxiv.org/abs/2502.12632">MALT Diffusion: Memory-Augmented Latent Transformers for Any-Length Video Generation</a>
+
+<br>
+
+    Sihyun Yu (KAIST); Meera Hahn (Google DeepMind); Dan Kondratyuk (Luma AI); Jinwoo Shin (KAIST); Agrim Gupta (Google DeepMind); José Lezama (Google DeepMind); Irfan Essa (Google DeepMind); David Ross (Google DeepMind); Jonathan Huang (Scaled Foundations)
+
+
+
+
+ </li>
+                                
+                            
+                                
+                                    <li> 
+
+
+    <a href="https://arxiv.org/abs/2504.21368">Revisiting Diffusion Autoencoder Training for Image Reconstruction Quality</a>
+
+<br>
+
+    Pramook Khungurn (pixiv, Inc.); Phonphrm Thawatdamrongkit (VISTEC); Sukit Seripanitkarn (VISTEC); Supasorn Suwajanakorn (VISTEC)
+
+
+
+
+ </li>
+                                
+                            
+                                
+                                    <li> 
+
+
+    <a href="https://arxiv.org/abs/2505.00975">Generating Animated Layouts as Structured Text Representations</a>
+
+<br>
+
+    Yeonsang Shin (Seoul National University); Jihwan Kim (Seoul National University); Yumin Song (Seoul National University); Kyungseung Lee (SK telecom); Hyunhee Chung (SK telecom); Taeyoung Na (SK telecom)
+
+
+
+
+ </li>
+                                
+                            
+                                
+                                    <li> 
+
+
+    <a href="https://arxiv.org/abs/2406.02509">CamCo: Camera-Controllable 3D-Consistent Image-to-Video Generation</a>
+
+<br>
+
+    Dejia Xu (University of Texas at Austin); Weili Nie (NVIDIA); Chao Liu (NVIDIA); Sifei Liu (NVIDIA); Jan Kautz (NVIDIA); Zhangyang Wang (University of Texas at Austin); Arash Vahdat (NVIDIA	)
+
+
+
+    <a href="https://ir1d.github.io/CamCo/">[https://ir1d.github.io/CamCo/]</a>
+
+
+ </li>
+                                
+                            
+                                
+                                    <li> 
+
+
+    <a href="https://arxiv.org/abs/2412.14464">LiftRefine: Progressively Refined View Synthesis from 3D Lifting with Volume-Triplane Representations</a>
+
+<br>
+
+    Tung Do (Movian Research); Thuan Nguyen (MBZUAI); Anh Tran (Movian Research); Rang Nguyen (VinAI Research); Binh-Son Hua (Trinity College Dublin)
+
+
+
+
+ </li>
+                                
+                            
+                                
+                                    <li> 
+
+
+    <a href="https://arxiv.org/pdf/2408.10453">Kubrick: Multimodal Agent Collaborations for Synthetic Video Generation</a>
+
+<br>
+
+    Liu He (Purdue University); Yizhi Song (Purdue University); Hejun Huang (University of Michigan); Pinxin Liu (University of Rochester); Yunlong Tang (University of Rochester); Daniel Aliaga (Purdue University); Xin Zhou (Baidu USA)
+
+
+
+
+ </li>
+                                
+                            
+                                
+                                    <li> 
+
+
+    <a href="https://arxiv.org/abs/2501.01949">VideoLifter: Lifting Videos to 3D with Fast Hierarchical Stereo Alignment</a>
+
+<br>
+
+    Wenyan Cong (University of Texas at Austin); Hanqing Zhu (University of Texas at Austin); Kevin  Wang  (University of Texas at Austin); Jiahui Lei (University of Pennsylvania); Colton Stearns (Stanford University); Yuanhao Cai (Johns Hopkins University); Dilin Wang (Meta); Rakesh Ranjan (Meta); Matt Feiszli (Meta); Leonidas Guibas (Stanford University); Atlas Wang (University of Texas at Austin); Weiyao Wang (Meta); Zhiwen Fan (University of Texas at Austin)
+
+
+
+    <a href="https://videolifter.github.io/">[https://videolifter.github.io/]</a>
+
+
+ </li>
+                                
+                            
+                                
+                                    <li> 
+
+
+    <a href="https://arxiv.org/abs/2412.04280">HumanEdit: A High-Quality Human-Rewarded Dataset for Instruction-based Image Editing</a>
+
+<br>
+
+    Jinbin Bai (National University of Singapore); Wei Chow (National University of Singapore); Ling Yang (Peking University); Xiangtai Li (Skywork AI); Juncheng Li (National University of Singapore); Hanwang Zhang (Nanyang Technological University ); Shuicheng Yan (National University of Singapore)
+
+
+
+    <a href="https://github.com/viiika/HumanEdit">[https://github.com/viiika/HumanEdit]</a>
+
+
+ </li>
+                                
+                            
+                                
+                                    <li> 
+
+
+    <a href="https://arxiv.org/abs/2503.24096">DANTE-AD: Dual-Vision Attention Network for Long-Term Audio Description</a>
+
+<br>
+
+    Adrienne Deganutti (University of Surrey); Simon Hadfield (University of Surrey); Andrew Gilbert (University of Surrey)
+
+
+
+    <a href="https://andrewjohngilbert.github.io/DANTE-AD/">[https://andrewjohngilbert.github.io/DANTE-AD/]</a>
+
+
+ </li>
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                        </ol>
+                        
+
+                        <!-- Extended Abstracts
+                        <br><em>Extended Abstracts</em> -->
+                        
+                        
+                        <!-- Accepted at Other Venues
+                        <br><em>Accepted at Other Venues</em> -->
+                        <ol class="noindent" start="425">
+                            
+                                    
+                                    <li> 
+
+
+    Stable Flow: Vital Layers for Training-Free Image Editing
+
+<br>
+
+    Omri Avrahami (The Hebrew University of Jerusalem); Or Patashnik (Tel Aviv University); Ohad Fried (Reichman University); Egor Nemchinov (Snap); Kfir Aberman (Snap); Dani Lischinski (The Hebrew University of Jerusalem); Daniel Cohen-Or (Tel Aviv University)
+
+
+
+
+
+&mdash; CVPR 2025
+ </li>
+                                
+                            
+                                
+                            
+                                    
+                                    <li> 
+
+
+    HyperGS: Hyperspectral 3D Gaussian Splatting
+
+<br>
+
+    Christopher Thirgood (University of Surrey); Oscar Mendez (University of Surrey); Erin Ling (University of Surrey); Jon Storey (i3D Robotics); Simon Hadfield (University of Surrey)
+
+
+
+
+
+&mdash; CVPR 2025
+ </li>
+                                
+                            
+                                    
+                                    <li> 
+
+
+    <a href="https://arxiv.org/pdf/2412.15185">Tiled Diffusion</a>
+
+<br>
+
+    Or Madar (Reichman University); Ohad Fried (Reichman University)
+
+
+
+    <a href="https://madaror.github.io/tiled-diffusion.github.io/">[https://madaror.github.io/tiled-diffusion.github.io/]</a>
+
+
+
+&mdash; CVPR 2025
+ </li>
+                                
+                            
+                                
+                            
+                                
+                            
+                                    
+                                    <li> 
+
+
+    <a href="https://arxiv.org/abs/2411.19390">DreamBlend: Advancing Personalized Fine-tuning of Text-to-Image Diffusion Models</a>
+
+<br>
+
+    Shwetha Ram (Amazon)
+
+
+
+
+
+&mdash; WACV 2025
+ </li>
+                                
+                            
+                                
+                            
+                                    
+                                    <li> 
+
+
+    VideoHandles: Editing 3D Object Compositions in Videos Using Video Generative Priors
+
+<br>
+
+    Juil Koo (KAIST); Paul Guerrero (Adobe Research); Chun-Hao Huang (Adobe Research); Duygu Ceylan (Adobe Research); Minhyuk Sung (KAIST)
+
+
+
+
+
+&mdash; CVPR 2025
+ </li>
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                    
+                                    <li> 
+
+
+    <a href="https://arxiv.org/abs/2503.17276">HyperNVD: Accelerating Neural Video Decomposition via Hypernetworks</a>
+
+<br>
+
+    Maria Pilligua Costa (Computer Vision Center (CVC), Universitat Autònoma Barcelona (UAB)); Danna Xue (Northwestern Polytechnical University, Computer Vision Center (CVC), Universitat Autònoma Barcelona (UAB)); Javier Vazquez-Corral (Computer Vision Center (CVC), Universitat Autònoma Barcelona (UAB))
+
+
+
+
+
+&mdash; CVPR 2025
+ </li>
+                                
+                            
+                                    
+                                    <li> 
+
+
+    <a href="https://arxiv.org/abs/2408.05938">Deep Geometric Moments Promote Shape Consistency in Text-to-3D Generation</a>
+
+<br>
+
+    Rajeev Goel (Arizona State University); Utkarsh Nath (Arizona State University); Eun Som Jeon (Seoul National University of Science and Technology); Kyle Min (Intel Labs); Changhoon Kim (Arizona State University); Pavan Turaga (Arizona State Univerisity)
+
+
+
+    <a href="https://moment-3d.github.io/">[https://moment-3d.github.io/]</a>
+
+
+
+&mdash; WACV 2025
+ </li>
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                        </ol>
+                    </td>    
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>12:30</td>
+                    <td>Lunch break - ExHall C</td>
+                    <td>🥪</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <div class="container text-center">
+            <hr>
+            <img src="images/famous/cat4d.jpg" width="21%" style="padding: 1em 0em 1em 0em">
+            <img src="images/famous/meta_assetgen.jpg" width="35%" style="padding: 1em 0em 1em 0em">
+            <img src="images/famous/dreamfusion.jpg" width="35%" style="padding: 1em 0em 1em 0em">
+            <br>
+            <em>Cat4D (Google, 2024), AssetGen (Meta, 2024), DreamFusion (Google, 2022).</em>
+        </div>
+
+        <br><br>
+        Afternoon session:<br>
+        
+        <table class="table table-sm table-striped">
+            <thead>
+                <tr>
+                    <th scope="col"><!--Play--></th>
+                    <th scope="col">Time CDT</th>
+                    <th scope="col"></td>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td>13:30</td>
+                    <td>Oral session + best paper announcement + best presentation competition
+                        <ul class="noindent">
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                                <li> 
+
+
+    <a href="https://www.arxiv.org/abs/2502.12632">MALT Diffusion: Memory-Augmented Latent Transformers for Any-Length Video Generation</a>
+
+<br>
+
+    Sihyun Yu (KAIST); Meera Hahn (Google DeepMind); Dan Kondratyuk (Luma AI); Jinwoo Shin (KAIST); Agrim Gupta (Google DeepMind); José Lezama (Google DeepMind); Irfan Essa (Google DeepMind); David Ross (Google DeepMind); Jonathan Huang (Scaled Foundations)
+
+
+
+
+ </li>
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                                <li> 
+
+
+    <a href="https://arxiv.org/abs/2501.01949">VideoLifter: Lifting Videos to 3D with Fast Hierarchical Stereo Alignment</a>
+
+<br>
+
+    Wenyan Cong (University of Texas at Austin); Hanqing Zhu (University of Texas at Austin); Kevin  Wang  (University of Texas at Austin); Jiahui Lei (University of Pennsylvania); Colton Stearns (Stanford University); Yuanhao Cai (Johns Hopkins University); Dilin Wang (Meta); Rakesh Ranjan (Meta); Matt Feiszli (Meta); Leonidas Guibas (Stanford University); Atlas Wang (University of Texas at Austin); Weiyao Wang (Meta); Zhiwen Fan (University of Texas at Austin)
+
+
+
+    <a href="https://videolifter.github.io/">[https://videolifter.github.io/]</a>
+
+
+ </li>
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                                <li> 
+
+
+    <a href="https://arxiv.org/abs/2504.10466">Art3D: Training-Free 3D Generation from Flat-Colored Illustration</a>
+
+<br>
+
+    Xiaoyan Cong (Brown University); Jiayi Shen (Brown University); Zekun Li (Brown University); Rao Fu (Brown University); Tao Lu (Brown University); Srinath Sridhar (Brown University)
+
+
+
+    <a href="https://joy-jy11.github.io/">[https://joy-jy11.github.io/]</a>
+
+
+ </li>
+                            
+                        
+                            
+                        
+                            
+                                <li> 
+
+
+    <a href="https://arxiv.org/abs/2412.19531">Is Your Text-to-Image Model Robust to Caption Noise?</a>
+
+<br>
+
+    Weichen Yu (University of Chinese Academy of Sciences); Ziyang Yang (ByteDance); Shanchuan Lin (ByteDance); Qi Zhao (ByteDance); Jianyi Wang (ByteDance); Liangke Gui (ByteDance); Matt Fredrikson (CMU); Lu Jiang (ByteDance)
+
+
+
+
+ </li>
+                            
+                        
+                            
+                                <li> 
+
+
+    <a href="https://arxiv.org/abs/2409.00313">Training-Free Sketch-Guided Diffusion with Latent Optimization</a>
+
+<br>
+
+    Sandra Zhang Ding (The University of Tokyo); Kiyoharu AIZAWA (The University of Tokyo); Jiafeng MAO (The University of Tokyo)
+
+
+
+
+ </li>
+                            
+                        
+                            
+                        
+                            
+                                <li> 
+
+
+    <a href="https://arxiv.org/abs/2503.17794">Progressive Prompt Detailing for Improved Alignment in Text-to-Image Generative Models</a>
+
+<br>
+
+    Ketan Suhaas Saichandran (Boston University); Xavier Thomas (Boston University); Prakhar Kaushik (Johns Hopkins University); Deepti Ghadiyaram (Boston University)
+
+
+
+
+ </li>
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                        </ul>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <!---1400-->
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+<td>
+  
+</td> 
+<td>
+  14:00
+</td>
+<td>
+  
+    <a href="https://yutongbai.com/">Yutong Bai</a>
+  
+  
+    &nbsp;(UC Berkeley)
+  
+</td>
+<td>
+  
+    <a href="https://x.com/YutongBAI1002" target="_blank" rel="noopener noreferrer">
+      <img src="/images/logos/X_logo_black.svg" alt="X" style="width: 20px; height: 20px;">
+    </a>
+  
+</td>
+
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+                    
+                </tr>
+                <tr>
+                    <!---1430-->
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+<td>
+  
+</td> 
+<td>
+  14:30
+</td>
+<td>
+  
+    <a href="https://nxzhao.com/">Nanxuan (Cherry) Zhao</a>
+  
+  
+    &nbsp;(Adobe)
+  
+</td>
+<td>
+  
+</td>
+
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+                    
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>15:00</td>
+                    <td>Coffee break</td>
+                    <td>☕</td>
+                </tr>
+                <tr>
+                    <!---1530-->
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+<td>
+  
+</td> 
+<td>
+  15:30
+</td>
+<td>
+  
+    <a href="https://imisra.github.io/">Ishan Misra</a>
+  
+  
+    &nbsp;(Meta)
+  
+</td>
+<td>
+  
+    <a href="https://x.com/imisra_" target="_blank" rel="noopener noreferrer">
+      <img src="/images/logos/X_logo_black.svg" alt="X" style="width: 20px; height: 20px;">
+    </a>
+  
+</td>
+
+                    
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>16:00</td>
+                    <td>Panel discussion &mdash; <em>Open Source in AI and the Creative Industry</em>
+                        <ul class="noindent">
+                        
+                        <li>
+                            <a href="https://jonbarron.info/">Jon Barron</a> (Google, Senior Staff Research Scientist)
+                        </li>
+                        
+                        <li>
+                            <a href="https://graphics.stanford.edu/~maneesh/">Maneesh Agrawala</a> (Stanford, Professor)
+                        </li>
+                        
+                        <li>
+                            <a href="https://nxzhao.com/">Nanxuan (Cherry) Zhao</a> (Adobe, Research Scientist)
+                        </li>
+                        
+                        <li>
+                            <a href="https://imisra.github.io/">Ishan Misra</a> (Meta, Research Scientist)
+                        </li>
+                        
+                        </ul>
+                    </td>
+                    <td>🗣️</td>
+                </tr>
+                <tr>
+                <tr>
+                    <td></td>
+                    <td>17:00</td>
+                    <td>Poster session 2 - ExHall D #412-431
+                        <!-- In OpenReview submitted order -->
+                        <!-- Papers 
+                        <br><em>Papers</em> -->
+                        <ol class="noindent" start="412">
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                                    <li> 
+
+
+    Towards Flim-Making Production Dialogue, Narration, Monologue Adaptive Moving Dubbing Benchmarks
+
+<br>
+
+    shiyu xia (AI Lab, Giant Network); Junjie Zheng (AI Lab, Giant Network); chaoyi wang (Shanghai Institute of Microsystem and Information Technology, Chinese Academy of Sciences); Zihao Chen (AI Lab, Giant Network); chaofan ding (AI Lab, Giant Network); Xiaohao Zhang (AI Lab, Giant Network); Xi Tao (AI Lab, Giant Network); Xiaoming He (School of life sciences, Fudan University); XINHAN DI (Deepearthgo)
+
+
+
+
+ </li>
+                                
+                            
+                                
+                                    <li> 
+
+
+    Comparison Reveals Commonality: Customized Image Generation through Contrastive Inversion
+
+<br>
+
+    Minseo Kim (KAIST); MINCHAN KWON (KAIST); dongyeun Lee (KAIST); Yunho Jeon (Hanbat University); junmo Kim (KAIST)
+
+
+
+
+ </li>
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                                    <li> 
+
+
+    <a href="https://arxiv.org/abs/2506.09969">Vectorized Region Based Brush Strokes for Artistic Rendering</a>
+
+<br>
+
+    Jeripothula Prudviraj (TCS Research); Vikram Jamwal (TCS Research)
+
+
+
+
+ </li>
+                                
+                            
+                                
+                                    <li> 
+
+
+    <a href="https://arxiv.org/pdf/2505.01928">GenSync: A Generalized Talking Head Framework for Audio-driven Multi-Subject Lip-Sync using 3D Gaussian Splatting</a>
+
+<br>
+
+    Anushka  Agarwal (University of Massachusetts Amherst); Yusuf Hassan  (University of Massachusetts Amherst); Talha Chafekar (University of Massachusetts Amherst)
+
+
+
+
+ </li>
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                                    <li> 
+
+
+    DiT-VTON: Diffusion Transformer Framework for Unified Multi-Category Virtual Try-On and Virtual Try-All with Integrated Image Editing
+
+<br>
+
+    Qi Li (Amazon); shuwen qiu (UCLA); Kee Kiat Koo (Amazon); Julien Han (UCLA); Karim Bouyarmane (Amazon)
+
+
+
+
+ </li>
+                                
+                            
+                                
+                                    <li> 
+
+
+    Is Concatenation Really All You Need? Efficient Concatenation-Based Pose Conditioning and Pose Control for Virtual Try On
+
+<br>
+
+    Qi Li (Amazon); Shuwen Qiu (UCLA); Kee Kiat Koo (Amazon); Julien Han (Amazon)
+
+
+
+
+ </li>
+                                
+                            
+                                
+                                    <li> 
+
+
+    <a href="https://arxiv.org/abs/2504.10466">Art3D: Training-Free 3D Generation from Flat-Colored Illustration</a>
+
+<br>
+
+    Xiaoyan Cong (Brown University); Jiayi Shen (Brown University); Zekun Li (Brown University); Rao Fu (Brown University); Tao Lu (Brown University); Srinath Sridhar (Brown University)
+
+
+
+    <a href="https://joy-jy11.github.io/">[https://joy-jy11.github.io/]</a>
+
+
+ </li>
+                                
+                            
+                                
+                            
+                                
+                                    <li> 
+
+
+    <a href="https://arxiv.org/abs/2412.19531">Is Your Text-to-Image Model Robust to Caption Noise?</a>
+
+<br>
+
+    Weichen Yu (University of Chinese Academy of Sciences); Ziyang Yang (ByteDance); Shanchuan Lin (ByteDance); Qi Zhao (ByteDance); Jianyi Wang (ByteDance); Liangke Gui (ByteDance); Matt Fredrikson (CMU); Lu Jiang (ByteDance)
+
+
+
+
+ </li>
+                                
+                            
+                                
+                                    <li> 
+
+
+    <a href="https://arxiv.org/abs/2409.00313">Training-Free Sketch-Guided Diffusion with Latent Optimization</a>
+
+<br>
+
+    Sandra Zhang Ding (The University of Tokyo); Kiyoharu AIZAWA (The University of Tokyo); Jiafeng MAO (The University of Tokyo)
+
+
+
+
+ </li>
+                                
+                            
+                                
+                                    <li> 
+
+
+    InstructVTON: Optimal Auto-Masking and Natural-Language-Guided Interactive Style Control for Inpainting-Based Virtual Try-On
+
+<br>
+
+    Meng Han (Amazon.com); Shuwen Qiu (UCLA); Qi Li (Amazon.com); Xingzi Xu (Duke University); Kavosh Asadi (Amazon.com); Karim Bouyarmane (Amazon.com)
+
+
+
+
+ </li>
+                                
+                            
+                                
+                                    <li> 
+
+
+    <a href="https://arxiv.org/abs/2503.17794">Progressive Prompt Detailing for Improved Alignment in Text-to-Image Generative Models</a>
+
+<br>
+
+    Ketan Suhaas Saichandran (Boston University); Xavier Thomas (Boston University); Prakhar Kaushik (Johns Hopkins University); Deepti Ghadiyaram (Boston University)
+
+
+
+
+ </li>
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                        </ol>
+                        
+
+                        <!-- Extended Abstracts
+                        <br><em>Extended Abstracts</em> -->
+                        
+                        
+                        <!-- Accepted at Other Venues
+                        <br><em>Accepted at Other Venues</em> -->
+                        <ol class="noindent" start="423">
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                                    <li> 
+
+
+    <a href="https://arxiv.org/abs/2503.23538">Enhancing Creative Generation on Stable Diffusion-based Models</a>
+
+<br>
+
+    Jiyeon Han (Korea Advanced Institute of Science and Technology); Dahee Kwon (Korea Advanced Institute of Science and Technology); Gayoung Lee (NAVER AI Lab); Junho Kim (NAVER AI Lab); Jaesik Choi (Korea Advanced Institute of Science and Technology)
+
+
+
+
+
+&mdash; CVPR 2025
+ </li>
+                                
+                            
+                                
+                                    <li> 
+
+
+    <a href="https://arxiv.org/abs/2407.09892">NamedCurves: Learned Image Enhancement via Color Naming</a>
+
+<br>
+
+    David Serrano-Lozano (Computer Vision Center); Luis Herranz (Universidad Autónoma de Madrid); Michael S. Brown (York University); Javier Vazquez-Corral (Computer Vision Center)
+
+
+
+
+
+&mdash; ECCV 2024
+ </li>
+                                
+                            
+                                
+                                    <li> 
+
+
+    ScribbleLight: Single Image Indoor Relighting with Scribbles
+
+<br>
+
+    Jun Myeong Choi (University of North Carolina at Chapel Hill); Annie Wang (University of North Carolina at Chapel Hill); Pieter Peers (College of William & Mary); Anand Bhattad (Toyota Technological Institute at Chicago); Roni Sengupta (University of North Carolina at Chapel Hill)
+
+
+
+
+
+&mdash; CVPR 2025
+ </li>
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                                    <li> 
+
+
+    4K4DGen: Panoramic 4D Generation at 4K Resolution
+
+<br>
+
+    Renjie Li (Texas A&M University); Bangbang Yang (ByteDance); Zhiwen Fan (The University of Texas at Austin); Dejia Xu (The University of Texas at Austin); Tingting Shen (XMU); Xuanyang Zhang (StepFun AI); Shijie Zhou (UCLA); Zeming Li (ByteDance); Achuta Kadambi (UCLA); Zhangyang Wang (	The University of Texas at Austin); Zhengzhong Tu (Texas A&M University); Panwang Pan (ByteDance)
+
+
+
+
+
+&mdash; ICLR 2025
+ </li>
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                                    <li> 
+
+
+    LumiNet: Latent Intrinsics Meets Diffusion Models for Indoor Scene Relighting
+
+<br>
+
+    Xiaoyan Xing (University of Amsterdam); Konrad Groh (Bosch); Sezer Karaoglu (University of Amsterdam); Theo Gevers (University of Amsterdam); Anand Bhattad (Toyota Technological Institute at Chicago)
+
+
+
+
+
+&mdash; CVPR 2025
+ </li>
+                                
+                            
+                                
+                                    <li> 
+
+
+    Perceptually Accurate 3D Talking Head Generation: New Definitions, Speech-Mesh Representation, and Evaluation Metrics
+
+<br>
+
+    Lee Chae-Yeon (POSTECH); Oh Hyun-Bin (POSTECH); Han EunGi (POSTECH); Kim Sung-Bin (POSTECH); Suekyeong Nam (KRAFTON); Tae-Hyun Oh (KAIST)
+
+
+
+
+
+&mdash; CVPR 2025
+ </li>
+                                
+                            
+                                
+                                    <li> 
+
+
+    <a href="https://arxiv.org/abs/2407.14505">T2V-CompBench: A Comprehensive Benchmark for Compositional Text-to-video Generation</a>
+
+<br>
+
+    Kaiyue Sun (The University of Hong Kong)
+
+
+
+    <a href="https://t2v-compbench-2025.github.io/">[https://t2v-compbench-2025.github.io/]</a>
+
+
+
+&mdash; CVPR 2025
+ </li>
+                                
+                            
+                                
+                                    <li> 
+
+
+    <a href="https://arxiv.org/abs/2504.01019">MixerMDM: Learnable Composition of Human Motion Diffusion Models</a>
+
+<br>
+
+    Pablo Ruiz Ponce (University of Alicante)
+
+
+
+
+
+&mdash; CVPR 2025
+ </li>
+                                
+                            
+                                
+                                    <li> 
+
+
+    <a href="https://arxiv.org/abs/2412.02168">Generative Photography: Scene-Consistent Camera Control for Realistic Text-to-Image Synthesis</a>
+
+<br>
+
+    YU Yuan (Purdue University); Xijun Wang (Purdue University); Yichen Sheng (Nvidia); Prateek Chennuri (Purdue University); Xingguang Zhang (Purdue University); Stanley Chan (Purdue University)
+
+
+
+    <a href="https://generative-photography.github.io/project/">[https://generative-photography.github.io/project/]</a>
+
+
+
+&mdash; CVPR 2025
+ </li>
+                                
+                            
+                        </ol>                        
+                    </td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container text-center">
+        <hr>
+        <img src="images/famous/dall-e2.jpg" width="22%" style="padding: 1em 0em 1em 0em">
+        <img src="images/famous/imagen.jpg" width="22%" style="padding: 1em 0em 1em 0em">
+        <img src="images/famous/gaugan2.jpg" width="38%" style="padding: 1em 0em 1em 0em">
+        <br>
+        <em>Dall-E 2 (OpenAI, 2022), Imagen (Google, 2022), GauGAN2 (NVIDIA, 2021).</em>
+    </div>
+
+    <div class="container" id="previousworkshops">
+        <hr>    
+        <h3>Previous Workshops (including session videos)</h3>
+        <ul>
+            <li>2024 - <a href="./2024/">AI for Content Creation</a> (Workshop at CVPR 2024).</li>
+            <li>2023 - <a href="./2023/">AI for Content Creation</a> (Workshop at CVPR 2023).</li>
+            <li>2022 - <a href="./2022/">AI for Content Creation</a> (Workshop at CVPR 2022).</li>
+            <li>2021 - <a href="./2021/">AI for Content Creation</a> (Workshop at CVPR 2021).</li>
+            <li>2020 - <a href="./2020/">AI for Content Creation</a> (Workshop at CVPR 2020).</li>
+            <li>2019 - <a href="https://nvlabs.github.io/dl-for-content-creation/">Deep Learning for Content Creation</a> (Tutorial at CVPR 2019)</li>
+        </ul>
+        <br><br>
+    </div>
+
+    <footer class="bg-light text-dark py-5">
+        <div class="container">
+            <img src="images/logos/brown-cs-logo.svg" class="logo">
+            <img src="images/logos/google_logo_tp.png" class="logo">
+            <!--<img src="images/logos/NVIDIALogo_2D.png" class="logo">-->
+            <img src="images/logos/Adobe-Logo.png" class="logo">
+            <img src="images/logos/cmu.png" class="logo">
+            <img src="images/logos/upenn.png" class="logo">
+
+            <p>
+                Thank you to <a href="http://themestr.app">Themestr.app</a> and <a href="http://getbootstrap.com">Bootstrap</a> for the Webpage design tools.
+            </p>
+            <p>
+                The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Javascript to control YouTube player-->
+    <script>
+        // From https://developers.google.com/youtube/iframe_api_reference
+        document.addEventListener("DOMContentLoaded", function(event) {
+            var tag = document.createElement('script');
+            tag.src = "https://www.youtube.com/iframe_api";
+            var firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        });
+
+        var videoplayer;
+        function onYouTubeIframeAPIReady() {
+            videoplayer = new YT.Player('videoplayer', {width: '800', height: '450', videoId: '3daTIaXxMWw'});
+        }
+    </script>
+    
+  </body>
+</html>
