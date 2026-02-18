@@ -1,18 +1,11 @@
 [
     {
-        "name": "Deqing Sun",
-        "affiliation": "Google",
-        "webpage": "https://deqings.github.io/",
-        "twitter": "https://twitter.com/DeqingSun",
-        "years": [2025,2024,2023,2022,2021,2020,2019]
-    },
-    {
-        "name": "Lingjie Liu",
+        "name": "James Tompkin",
         "position": "Assistant Professor",
-        "affiliation": "University of Pennsylvania",
-        "webpage": "https://lingjie0206.github.io/",
-        "bluesky": "https://bsky.app/profile/lingjieliu.bsky.social",
-        "years": [2025,2024,2023]
+        "affiliation": "Brown University",
+        "webpage": "https://www.jamestompkin.com/",
+        "bluesky": "https://bsky.app/profile/jamestompkin.bsky.social",
+        "years": [2026,2025,2024,2023,2022,2021,2020] 
     },
     {
         "name": "Krishna Kumar Singh",
@@ -20,8 +13,38 @@
         "affiliation": "Adobe",
         "webpage": "https://krsingh.cs.ucdavis.edu/",
         "bluesky": "https://bsky.app/profile/krishna-cv.bsky.social",
-        "years": [2025]
-    },    
+        "years": [2026,2025]
+    },
+    {
+        "name": "Jun-Yan Zhu",
+        "position": "Assistant Professor",
+        "affiliation": "Carnegie Mellon University",
+        "webpage": "https://www.cs.cmu.edu/~junyanz/",
+        "bluesky": "https://bsky.app/profile/junyanz.bsky.social",
+        "years": [2026,2025,2024,2023,2022]
+    },
+    {
+        "name": "Yuheng Li",
+        "affiliation": "Adobe",
+        "webpage": "https://yuheng-li.github.io/",
+        "twitter": "https://x.com/Yuheng120766",
+        "years": [2026]
+    },
+    {
+        "name": "Deqing Sun",
+        "affiliation": "Google",
+        "webpage": "https://deqings.github.io/",
+        "twitter": "https://twitter.com/DeqingSun",
+        "years": [2026,2025,2024,2023,2022,2021,2020,2019]
+    },
+    {
+        "name": "Lingjie Liu",
+        "position": "Assistant Professor",
+        "affiliation": "University of Pennsylvania",
+        "webpage": "https://lingjie0206.github.io/",
+        "bluesky": "https://bsky.app/profile/lingjieliu.bsky.social",
+        "years": [2026,2025,2024,2023]
+    },  
     {
         "name": "Yuanzhen Li",
         "position": "Principal Research Scientist",
@@ -57,7 +80,7 @@
         "affiliation": "ByteDance",
         "webpage": "http://www.lujiang.info/",
         "twitter": "https://twitter.com/roadjiang",
-        "years": [2025,2024,2023,2022,2021,2020]
+        "years": [2026,2025,2024,2023,2022,2021,2020]
     },
     {
         "name": "Seungjun Nah",
@@ -74,26 +97,24 @@
         "years": [2024,2023]
     },
     {
+        "webpage": "https://lynl7130.github.io/",
+        "name": "Yiqing Liang",
+        "affiliation": "Luma AI",
+        "twitter": "https://x.com/yiqingliang2",
+        "years": [2026]
+    },
+    {
+        "webpage": "https://thaoshibe.github.io/",
+        "name": "Thao Nguyen",
+        "affiliation": "UW-Madison",
+        "twitter": "https://x.com/thaoshibe",
+        "years": [2026]
+    },
+    {
         "name": "Ting-Chun Wang",
         "affiliation": "NVIDIA",
         "webpage": "https://tcwang0509.github.io/",
         "twitter": "https://twitter.com/tcwang0509/",
         "years": [2023,2022]
-    },
-    {
-        "name": "Jun-Yan Zhu",
-        "position": "Assistant Professor",
-        "affiliation": "Carnegie Mellon University",
-        "webpage": "https://www.cs.cmu.edu/~junyanz/",
-        "bluesky": "https://bsky.app/profile/junyanz.bsky.social",
-        "years": [2025,2024,2023,2022]
-    },
-    {
-        "name": "James Tompkin",
-        "position": "Assistant Professor",
-        "affiliation": "Brown University",
-        "webpage": "https://www.jamestompkin.com/",
-        "bluesky": "https://bsky.app/profile/jamestompkin.bsky.social",
-        "years": [2025,2024,2023,2022,2021,2020] 
     }
 ]
