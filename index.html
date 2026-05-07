@@ -165,7 +165,8 @@
     </div>
 
     
-    <div class="container" id="submission">
+    <!-- Author and Submission Instructions hidden after submission deadline closed -->
+    <!-- <div class="container" id="submission">
         <hr>
         <h3>Author and Submission Instructions</h3>
         <p>
@@ -203,14 +204,12 @@
         The best student papers will be acknowledged with a prize 🏆.
         </p>
 
-        <!-- <p>
-        <em>Reviewing:</em> We accept self-nominations for reviewers: <a href="https://docs.google.com/forms/d/e/1FAIpQLSebt-nqHRZkzS5WiAyr_zeDBMrKLkDItRujS0mSIzn1hgsn-Q/viewform">Apply here (Google Form)</a>.<br>
-        This is an excellent opportunity for junior researchers to gain experience in reviewing. Experienced reviewers can also apply to be a meta-reviewer (similar to Area Chair), again to gain experience. Meta-reviewers will handle at most 5 papers. Thank you!
-        </p> -->
-        
         <p>
             <em>Travel awards (2026):</em> <a href="https://forms.gle/2EArXusxzgpyZEW77">Google Form</a>
+    </div> -->
 
+    <div class="container" id="topics">
+        <hr>
         <h4>Topics</h4>
         <p>
         We seek contributions across content creation, including but not limited to techniques for content creation:
@@ -246,18 +245,40 @@
         <hr>
         <h3>2026 Awards</h3>
         <ul>
-        {% for item in site.data.papers_2025 %}
+        {% for item in site.data.papers_2026 %}
             {% if item.award == "bestpaper" %}
                 <li><h5>Best paper</h5> {% include paperitem.html item=item %}</li><br>
             {% endif %}
         {% endfor %}
-        {% for item in site.data.papers_2025 %}
+        {% for item in site.data.papers_2026 %}
             {% if item.award == "bestpresentation" %}
                 <li><h5>Best presentation (shared)</h5> {% include paperitem.html item=item %}</li><br>
             {% endif %}
         {% endfor %}
         </ul>
     </div> -->
+
+    <div class="container" id="acceptedpapers">
+        <hr>
+        <h3>2026 Accepted Papers</h3>
+        <p>Congratulations to all accepted authors! Poster sessions and oral presentations will be announced with the full schedule.</p>
+        <h5>Oral presentations</h5>
+        <ol>
+        {% for item in site.data.papers_2026 %}
+            {% if item.decision == 'Accept (Oral)' %}
+                <li> {% include paperitem.html item=item %} </li>
+            {% endif %}
+        {% endfor %}
+        </ol>
+        <h5>Poster presentations</h5>
+        <ol>
+        {% for item in site.data.papers_2026 %}
+            {% if item.decision == 'Accept (Poster)' %}
+                <li> {% include paperitem.html item=item %} </li>
+            {% endif %}
+        {% endfor %}
+        </ol>
+    </div>
 
     <div class="container" id="schedule">
         <hr>
