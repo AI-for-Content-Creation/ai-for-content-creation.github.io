@@ -34,8 +34,9 @@
     <header class="bg-light text-dark py-5">
     <div class="container text-center">
         <h1>{{ site.title }}</h1>
-        <h3>TBD @ CVPR 2026</h3>
-        <h4>Location: TBD, Denver, CO, USA</h4>
+        <h3>@ CVPR 2026</h3>
+        <h4>3rd June 2026 — 8:25am MDT</h4>
+        <h4>Location: Room 610/612, Colorado Convention Center, Denver, CO, USA</h4>
         <h4>Remote (Zoom): <a href="">TBD</a></h4> 
     </div>
     </header>
@@ -57,11 +58,9 @@
             <li class="nav-item">
                 <a class="nav-link link-primary" href="#schedule">Schedule</a>
             </li>
-            <!--
             <li class="nav-item">
-                <a class="nav-link link-primary" href="#papers">Papers</a>
+                <a class="nav-link link-primary" href="#acceptedpapers">Papers</a>
             </li>
-            -->
             <!--
             <li class="nav-item">
                 <a class="nav-link link-primary" href="#submission">Submission</a>
@@ -142,6 +141,7 @@
         </p>
     </div>
 
+    <!--
     <div class="container" id="speakers">
         <hr>
         <h3>2026 Tentative Speakers</h3>
@@ -153,6 +153,7 @@
             <li>and more...</li>
         </ul>
     </div>
+    -->
 
 
     <div class="container text-center">
@@ -258,32 +259,85 @@
         </ul>
     </div> -->
 
-    <div class="container" id="acceptedpapers">
-        <hr>
-        <h3>2026 Accepted Papers</h3>
-        <p>Congratulations to all accepted authors! Poster sessions and oral presentations will be announced with the full schedule.</p>
-        <h5>Oral presentations</h5>
-        <ol>
-        {% for item in site.data.papers_2026 %}
-            {% if item.decision == 'Accept (Oral)' %}
-                <li> {% include paperitem.html item=item %} </li>
-            {% endif %}
-        {% endfor %}
-        </ol>
-        <h5>Poster presentations</h5>
-        <ol>
-        {% for item in site.data.papers_2026 %}
-            {% if item.decision == 'Accept (Poster)' %}
-                <li> {% include paperitem.html item=item %} </li>
-            {% endif %}
-        {% endfor %}
-        </ol>
-    </div>
-
     <div class="container" id="schedule">
         <hr>
         <h3>2026 Schedule</h3>
-        Details coming soon!
+
+        <p><em>All times in MDT (Mountain Daylight Time, UTC-6) &mdash; Room 610/612, Colorado Convention Center, Denver, CO, USA</em></p>
+        <table class="table table-sm table-striped">
+            <thead>
+                <tr>
+                    <th scope="col" style="width:2%"></th>
+                    <th scope="col" style="width:5%">Time</th>
+                    <th scope="col" style="width:83%"></th>
+                    <th scope="col" style="width:10%"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td>8:25</td>
+                    <td>Welcome and introductions</td>
+                    <td>👋</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>8:30</td>
+                    <td><a href="https://people.cs.uchicago.edu/~ranahanocka/">Rana Hanocka (University of Chicago)</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>9:00</td>
+                    <td><a href="https://www.cs.jhu.edu/~ayuille/">Alan Yuille (Johns Hopkins University)</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>9:30</td>
+                    <td><a href="https://people.mpi-inf.mpg.de/~theobalt/">Christian Theobalt (Max-Planck-Institute for Informatics)</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>10:00</td>
+                    <td>Coffee Break / Poster Session</td>
+                    <td>☕</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>11:00</td>
+                    <td>Orals
+                        <ul class="noindent">
+                        {% for item in site.data.papers_2026 %}
+                            {% if item.decision == 'Accept (Oral)' %}
+                                <li> {% include paperitem.html item=item %} </li>
+                            {% endif %}
+                        {% endfor %}
+                        </ul>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>11:30</td>
+                    <td><a href="https://taesung.me/">Taesung Park (Reve)</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>12:00</td>
+                    <td><a href="https://www.sainingxie.com/">Saining Xie (New York University, AMI Labs)</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>12:30</td>
+                    <td>Closing Remarks</td>
+                    <td>👋</td>
+                </tr>
+            </tbody>
+        </table>
         <!-- <h3>2026 Schedule&mdash;<a href="Coming Soon">Video Recording</a></h3> -->
         
         <!-- <div id="videoplayer"></div>
@@ -463,6 +517,29 @@
                 </tr>
             </tbody>
         </table> -->
+    </div>
+
+    <div class="container" id="acceptedpapers">
+        <hr>
+        <h3>2026 Accepted Papers</h3>
+        <p>Congratulations to all accepted authors!</p>
+        <h5>Oral presentations</h5>
+        <ol>
+        {% for item in site.data.papers_2026 %}
+            {% if item.decision == 'Accept (Oral)' %}
+                <li> {% include paperitem.html item=item %} </li>
+            {% endif %}
+        {% endfor %}
+        </ol>
+        <h5>Poster presentations</h5>
+        <ol>
+        {% for item in site.data.papers_2026 %}
+            {% if item.decision == 'Accept (Poster)' %}
+                <li> {% include paperitem.html item=item %} </li>
+            {% endif %}
+        {% endfor %}
+        </ol>
+        <p style="color: gray; font-size: 80%; text-align: right;"><em>Please email Thao (thao.nguyen@wisc.edu) to add/edit paper arXiv or project pages. Thank you!</em></p>
     </div>
 
     <div class="container text-center">
