@@ -164,6 +164,14 @@ p {
     vertical-align: middle;
 }
 
+.logo-lg {           /* Adobe: 50% bigger */
+    height: 4.5em;
+}
+
+.logo-sm {           /* Google: smaller (its wordmark reads large at equal height) */
+    height: 2em;
+}
+
 video {
     vertical-align: middle;
     border-style: none;
