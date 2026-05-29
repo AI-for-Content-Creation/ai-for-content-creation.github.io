@@ -179,29 +179,14 @@
             The AI for Content Creation workshop explores this exciting and fast-moving research area. We bring together invited speakers of world-class expertise in content creation, up-and-coming researchers, and authors of submitted workshop papers, to engage in a day filled with learning, discussion, and network building.
         </p>
 
-        <p>
-        Welcome! - <br>
-        
+        <p class="mb-2">Welcome! &mdash;</p>
+        <div class="organizers">
         {% for item in site.data.organizers %}
             {% if item.years contains 2026 %}
-                <a class="link-primary" href="{{ item.webpage }}">{{ item.name }} ({{ item.affiliation }})</a> 
-                {% if item.mastodon %}
-                <a href="{{ item.mastodon }}"><img src="images/logos/mastodon_logo.svg" width=18px></a> 
-                {% endif %}
-                {% if item.bluesky %}
-                <a href="{{ item.bluesky }}"><img src="images/logos/Bluesky_Logo.svg" width=18px></a> 
-                {% endif %}
-                {% if item.twitter %}
-                <a href="{{ item.twitter }}"><img src="images/logos/X_logo_black.svg" width=18px></a> 
-                {% endif %}
-                {% if item.threads %}
-                <a href="{{ item.threads }}"><img src="images/logos/Threads_logo.svg" width=18px></a> 
-                {% endif %}
-                <br>        
+            <span class="org"><a class="link-primary" href="{{ item.webpage }}">{{ item.name }} ({{ item.affiliation }})</a>{% if item.mastodon %} <a href="{{ item.mastodon }}" aria-label="{{ item.name }} on Mastodon"><img src="images/logos/mastodon_logo.svg" width="18" alt="Mastodon"></a>{% endif %}{% if item.bluesky %} <a href="{{ item.bluesky }}" aria-label="{{ item.name }} on Bluesky"><img src="images/logos/Bluesky_Logo.svg" width="18" alt="Bluesky"></a>{% endif %}{% if item.twitter %} <a href="{{ item.twitter }}" aria-label="{{ item.name }} on X"><img src="images/logos/X_logo_black.svg" width="18" alt="X"></a>{% endif %}{% if item.threads %} <a href="{{ item.threads }}" aria-label="{{ item.name }} on Threads"><img src="images/logos/Threads_logo.svg" width="18" alt="Threads"></a>{% endif %}</span>
             {% endif %}
         {% endfor %}
-
-        </p>
+        </div>
     </div>
 
 

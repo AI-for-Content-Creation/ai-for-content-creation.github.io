@@ -62,6 +62,27 @@ p {
     border-radius: 0.5rem;
 }
 
+/* ---- Organizers: horizontal inline-flow list ---- */
+.organizers {
+    margin: 0.25rem 0 1rem;
+    line-height: 1.9;
+}
+
+.organizers .org {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.organizers .org:not(:last-child)::after {
+    content: "•";
+    margin: 0 0.55rem;
+    color: #bbb;
+}
+
+.organizers .org img {
+    vertical-align: middle;
+}
+
 /* ---- Small circular speaker photos in the schedule ---- */
 .speaker-thumb {
     width: 34px;
