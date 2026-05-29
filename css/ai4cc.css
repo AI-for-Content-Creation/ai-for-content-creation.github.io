@@ -72,23 +72,60 @@ p {
     vertical-align: middle;
 }
 
-/* ---- Carousel (Bootstrap 5: indicators are <button>s) ---- */
+/* ---- Carousel: caption + dots sit BELOW the image (no overlay) ---- */
+.carousel-img {
+    height: 300px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 0.5rem;
+}
+
+.carousel-cap {
+    margin-top: 0.75rem;
+    min-height: 3.2em;            /* reserve space so slides don't jump */
+    padding: 0 1rem;
+    line-height: 1.3;
+}
+
+.carousel-cap .cap-authors {
+    font-weight: 600;
+}
+
+.carousel-cap .cap-title {
+    color: #666;
+}
+
+/* Indicators: round maroon dots, in normal flow below the caption */
+.carousel-indicators {
+    position: static;
+    margin: 0.75rem 0 0;
+}
+
 .carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 0;
     background-color: #a31f33;
+    opacity: 0.4;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+}
+
+/* Arrows align to the image area only (not the caption/dots below) */
+.carousel-control-prev,
+.carousel-control-next {
+    height: 300px;
+    width: 8%;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     background-color: #a31f33;
     border-radius: 50%;
-}
-
-.carousel-caption h5,
-.carousel-caption p {
-    display: inline-block;
-    background: rgba(255, 255, 255, 0.85);
-    border-radius: 0.3rem;
-    padding: 0.1rem 0.5rem;
 }
 
 /* ---- Footer sponsor logos: size uniformly by height ---- */
