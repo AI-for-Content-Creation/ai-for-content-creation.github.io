@@ -1,5 +1,33 @@
 [
   {
+    "image": "./images/papers/ai4cc2025_cong_videolifter.jpg",
+    "alt": "VideoLifter: Lifting Videos to 3D with Fast Hierarchical Stereo Alignment",
+    "authors": "Wenyan Cong et al.",
+    "title": "VideoLifter: Lifting Videos to 3D with Fast Hierarchical Stereo Alignment",
+    "year": 2025
+  },
+  {
+    "image": "./images/papers/ai4cc2025_cong_art3d.jpg",
+    "alt": "Art3D: Training-Free 3D Generation from Flat-Colored Illustration",
+    "authors": "Xiaoyan Cong et al.",
+    "title": "Art3D: Training-Free 3D Generation from Flat-Colored Illustration",
+    "year": 2025
+  },
+  {
+    "image": "./images/papers/ai4cc2025_yu_malt-diffusion.jpg",
+    "alt": "MALT Diffusion: Memory-Augmented Latent Transformers for Any-Length Video Generation",
+    "authors": "Sihyun Yu et al.",
+    "title": "MALT Diffusion: Memory-Augmented Latent Transformers for Any-Length Video Generation",
+    "year": 2025
+  },
+  {
+    "image": "./images/papers/ai4cc2025_zhangding_sketch-guided.jpg",
+    "alt": "Training-Free Sketch-Guided Diffusion with Latent Optimization",
+    "authors": "Sandra Zhang Ding et al.",
+    "title": "Training-Free Sketch-Guided Diffusion with Latent Optimization",
+    "year": 2025
+  },
+  {
     "image": "./images/papers/ai4cc2024_Jeong_visual-style-prompting.jpg",
     "alt": "Visual Style Prompting with Swapping Self-Attention",
     "authors": "Jeong et al.",
