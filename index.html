@@ -67,6 +67,19 @@
         "@type": "Organization",
         "name": "AI for Content Creation Workshop",
         "url": "https://ai-for-content-creation.github.io/"
+      },
+      "performer": [
+        {% for s in site.data.speakers_2026 %}{"@type": "Person", "name": {{ s.name | jsonify }}{% if s.webpage and s.webpage != "" %}, "url": {{ s.webpage | jsonify }}{% endif %}}{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      ],
+      "offers": {
+        "@type": "Offer",
+        "name": "Workshop attendance (with CVPR 2026 registration)",
+        "url": "https://cvpr.thecvf.com/",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "validFrom": "2026-02-23T00:00:00-06:00"
       }
     }
     </script>
