@@ -5,7 +5,7 @@
 {% assign venue = item.publication_conference_if_published | default: "" | strip %}
 {% assign board = item.poster_board | default: "" | strip %}
 
-{% if board != "" %}
+{% if board != "" and include.show_board != false %}
     <span class="badge badge-secondary" style="font-weight:600;">Board {{ board }}</span>
 {% endif %}
 {% if arxiv != "" %}

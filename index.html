@@ -300,7 +300,7 @@
                         <ul class="noindent">
                         {% for item in site.data.papers_2026 %}
                             {% if item.decision == 'Accept (Oral)' %}
-                                <li> {% include paperitem.html item=item %} </li>
+                                <li> {% include paperitem.html item=item show_board=false %} </li>
                             {% endif %}
                         {% endfor %}
                         </ul>
@@ -526,7 +526,16 @@
         <h5>Poster presentations</h5>
         <ol>
         {% for item in site.data.papers_2026 %}
-            {% if item.decision == 'Accept (Poster)' %}
+            {% if item.decision == 'Accept (Poster)' and item.accepted_elsewhere != 'Yes' %}
+                <li> {% include paperitem.html item=item %} </li>
+            {% endif %}
+        {% endfor %}
+        </ol>
+        <h5>Papers accepted at other venues</h5>
+        <p>We also welcome these recently published works for poster presentation.</p>
+        <ol>
+        {% for item in site.data.papers_2026 %}
+            {% if item.accepted_elsewhere == 'Yes' %}
                 <li> {% include paperitem.html item=item %} </li>
             {% endif %}
         {% endfor %}
