@@ -1,52 +1,102 @@
+/* ---- Brand theme on Bootstrap 5 (Quicksand font + maroon #a31f33) ---- */
+:root {
+    --bs-primary: #a31f33;
+    --bs-primary-rgb: 163, 31, 51;
+    --bs-link-color-rgb: 163, 31, 51;
+    --bs-link-hover-color-rgb: 133, 24, 42;
+}
+
+body {
+    font-family: 'Quicksand', system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+    font-weight: 600;
+}
+
+.btn-primary {
+    --bs-btn-bg: #a31f33;
+    --bs-btn-border-color: #a31f33;
+    --bs-btn-hover-bg: #85182a;
+    --bs-btn-hover-border-color: #85182a;
+    --bs-btn-active-bg: #85182a;
+    --bs-btn-active-border-color: #85182a;
+}
+
+.btn-outline-primary {
+    --bs-btn-color: #a31f33;
+    --bs-btn-border-color: #a31f33;
+    --bs-btn-hover-bg: #a31f33;
+    --bs-btn-hover-border-color: #a31f33;
+    --bs-btn-active-bg: #a31f33;
+    --bs-btn-active-border-color: #a31f33;
+}
+
+/* ---- Layout / typography ---- */
 p {
     text-align: justify;
     -webkit-hyphens: auto;
-        -moz-hyphens: auto;
-    hyphens: auto;
+       -moz-hyphens: auto;
+            hyphens: auto;
 }
 
-ol.carousel-indicators li{
-    border: 2px solid black;
-}
-
-.carousel-control-prev-icon{
-    border: 2px solid black;
-    background-color: gray;
-}
-
-.carousel-control-next-icon{
-    border: 2px solid black;
-    background-color: gray;
-}
-
-.carousel-caption h5{
-    border: 2px solid black;
-    background: white;
-    opacity: 80%;
-}
-
-.carousel-caption p{
-    border: 2px solid black;
-    background: white;
-    opacity: 80%;
-}
-
-.noindent{
+.noindent {
     padding-left: 0;
-} 
-
-/* 
-.brownbrown {
-    color: #4E3629;
 }
 
-.brownred {
-    color: #C00404;
-} */
+/* ---- Consistent showcase image galleries ---- */
+.showcase {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem 0 0.5rem;
+}
 
+.showcase-item {
+    flex: 1 1 220px;
+    max-width: 360px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+/* ---- Small circular speaker photos in the schedule ---- */
+.speaker-thumb {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+/* ---- Carousel (Bootstrap 5: indicators are <button>s) ---- */
+.carousel-indicators [data-bs-target] {
+    background-color: #a31f33;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #a31f33;
+    border-radius: 50%;
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 0.3rem;
+    padding: 0.1rem 0.5rem;
+}
+
+/* ---- Footer sponsor logos: size uniformly by height ---- */
 .logo {
-    width: 20em;
-    padding: 1em 1em 1em 1em;
+    height: 3em;
+    width: auto;
+    margin: 1em;
+    vertical-align: middle;
 }
 
 video {

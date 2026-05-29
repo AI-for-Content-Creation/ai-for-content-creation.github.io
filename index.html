@@ -7,15 +7,16 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The AI for Content Creation workshop at CVPR 2026 — 3 June 2026, Colorado Convention Center, Denver. Invited talks, papers, and posters on generative models for images, video, and 3D.">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link href="css/theme_1610153848925.css" rel="stylesheet"> <!-- Via Themestr.app -->
+    <!-- Fonts (Quicksand, matching the site brand) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <link href="css/ai4cc.css" rel="stylesheet">
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
     <!-- Favicons -->
     <!-- Sizes from here: https://www.emergeinteractive.com/insights/detail/The-Essentials-of-FavIcons/ -->
@@ -39,6 +40,37 @@
     <meta name="twitter:description" content="3 June 2026, Denver, CO. Generative models for images, video, and 3D." />
     <meta name="twitter:image" content="https://ai-for-content-creation.github.io/images/sm-card.jpg" />
 
+    <!-- Structured data for rich search results -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": "AI for Content Creation Workshop @ CVPR 2026",
+      "startDate": "2026-06-03T08:25:00-06:00",
+      "endDate": "2026-06-03T12:30:00-06:00",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
+      "location": {
+        "@type": "Place",
+        "name": "Colorado Convention Center, Room 610/612",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Denver",
+          "addressRegion": "CO",
+          "addressCountry": "US"
+        }
+      },
+      "image": "https://ai-for-content-creation.github.io/images/sm-card.jpg",
+      "url": "https://ai-for-content-creation.github.io/",
+      "description": "The AI for Content Creation workshop at CVPR 2026: invited talks, papers, and posters on generative models for images, video, and 3D.",
+      "organizer": {
+        "@type": "Organization",
+        "name": "AI for Content Creation Workshop",
+        "url": "https://ai-for-content-creation.github.io/"
+      }
+    }
+    </script>
+
     <title>{{ site.title }}</title>
   </head>
 
@@ -50,7 +82,12 @@
         <h3>@ CVPR 2026</h3>
         <h4>3rd June 2026 — 8:25am MDT</h4>
         <h4>Location: Room 610/612, Colorado Convention Center, Denver, CO, USA</h4>
-        <h4>Remote (Zoom): <a href="">TBD</a></h4> 
+        <h4>Remote (Zoom): <a href="">TBD</a></h4>
+        <div class="mt-3">
+            <a class="btn btn-primary btn-sm" href="events/ai4cc-2026.ics" download>📅 Add to calendar (.ics)</a>
+            <a class="btn btn-outline-primary btn-sm" target="_blank" rel="noopener"
+               href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=AI%20for%20Content%20Creation%20Workshop%20%40%20CVPR%202026&dates=20260603T142500Z/20260603T183000Z&location=Room%20610%2F612%2C%20Colorado%20Convention%20Center%2C%20Denver%2C%20CO%2C%20USA&details=Invited%20talks%2C%20papers%2C%20and%20posters%20on%20generative%20models%20for%20images%2C%20video%2C%20and%203D.%20https%3A%2F%2Fai-for-content-creation.github.io%2F">Google Calendar</a>
+        </div>
     </div>
     </header>
 
@@ -87,18 +124,18 @@
     </nav>
 
     <div class="container" style="margin-top: 2em">
-        <div id="carouselTop" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
+        <div id="carouselTop" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
             {% assign items = site.data.carousel %}
             {% for item in items %}
-                <li data-target="#carouselTop" data-slide-to="{{ forloop.index0 }}" {% if forloop.first %}class="active"{% endif %}></li>
+                <button type="button" data-bs-target="#carouselTop" data-bs-slide-to="{{ forloop.index0 }}" {% if forloop.first %}class="active" aria-current="true"{% endif %} aria-label="Slide {{ forloop.index }}"></button>
             {% endfor %}
-            </ol>
+            </div>
 
             <div class="carousel-inner text-center">
             {% for item in items %}
                 <div class="carousel-item {% if forloop.first %}active{% endif %}">
-                <img height="300" src="{{ item.image }}" alt="{{ item.alt }}">
+                <img height="300" class="d-block mx-auto" src="{{ item.image }}" alt="{{ item.alt }}" loading="lazy">
                 <div class="carousel-caption d-none d-md-block">
                     <h5 class="text-dark text-center">{{ item.authors }}, AI4CC {{ item.year }}</h5>
                     <p class="text-dark text-center">{{ item.title }}</p>
@@ -107,14 +144,14 @@
             {% endfor %}
             </div>
 
-            <a class="carousel-control-prev" href="#carouselTop" role="button" data-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselTop" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselTop" role="button" data-slide="next">
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselTop" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-            </a>
+            <span class="visually-hidden">Next</span>
+            </button>
         </div>
         <br><br>
     </div>
@@ -157,10 +194,11 @@
 
     <div class="container text-center">
         <hr>
-        <video src="images/famous/adobe_firefly.mp4" width="25%" autoplay loop style="padding: 1em 0em 1em 0em"></video>
-        <img src="images/famous/genie2.webp" width="33%" style="padding: 1em 0em 1em 0em">
-        <img src="images/famous/sora.jpg" width="35%" style="padding: 1em 0em 1em 0em">
-        <br>
+        <div class="showcase">
+            <video class="showcase-item" src="images/famous/adobe_firefly.mp4" autoplay loop muted playsinline aria-label="Firefly Video by Adobe, 2025"></video>
+            <img class="showcase-item" src="images/famous/genie2.webp" alt="Genie 2 by DeepMind, 2024" loading="lazy">
+            <img class="showcase-item" src="images/famous/sora.jpg" alt="SORA by OpenAI, 2024" loading="lazy">
+        </div>
         <em>Firefly Video (Adobe, 2025), Genie 2 (DeepMind, 2024), SORA (OpenAI, 2024).</em>
     </div>
 
@@ -282,7 +320,7 @@
                 <tr>
                     <td></td>
                     <td>8:30</td>
-                    <td><a href="https://people.cs.uchicago.edu/~ranahanocka/">Rana Hanocka (University of Chicago)</a>&mdash;3D Generation and Editing</td>
+                    <td><img class="speaker-thumb" src="images/speakers/2026/hanocka.jpg" alt="Rana Hanocka" loading="lazy"><a href="https://people.cs.uchicago.edu/~ranahanocka/">Rana Hanocka (University of Chicago)</a>&mdash;3D Generation and Editing</td>
                     <td>
                         <a href="https://bsky.app/profile/ranahanocka.bsky.social"><img src="images/logos/Bluesky_Logo.svg" width=18px></a> 
                         <a href="https://twitter.com/RanaHanocka"><img src="images/logos/X_logo_black.svg" width=18px></a>
@@ -291,13 +329,13 @@
                 <tr>
                     <td></td>
                     <td>9:00</td>
-                    <td><a href="https://www.cs.jhu.edu/~ayuille1/index.html">Alan Yuille (Johns Hopkins University)</a>&mdash;Building Representations</td>
+                    <td><img class="speaker-thumb" src="images/speakers/2026/yuille.jpg" alt="Alan Yuille" loading="lazy"><a href="https://www.cs.jhu.edu/~ayuille1/index.html">Alan Yuille (Johns Hopkins University)</a>&mdash;Building Representations</td>
                     <td></td>
                 </tr>
                 <tr>
                     <td></td>
                     <td>9:30</td>
-                    <td><a href="https://people.mpi-inf.mpg.de/~theobalt/">Christian Theobalt (Max-Planck-Institute for Informatics)</a>&mdash;4D Humans</td>
+                    <td><img class="speaker-thumb" src="images/speakers/2026/theobalt.jpg" alt="Christian Theobalt" loading="lazy"><a href="https://people.mpi-inf.mpg.de/~theobalt/">Christian Theobalt (Max-Planck-Institute for Informatics)</a>&mdash;4D Humans</td>
                     <td></td>
                 </tr>
                 <tr>
@@ -323,13 +361,13 @@
                 <tr>
                     <td></td>
                     <td>11:30</td>
-                    <td><a href="https://taesung.me/">Taesung Park (Reve)</a>&mdash;Controllable Image Generation</td>
+                    <td><img class="speaker-thumb" src="images/speakers/2026/park.jpg" alt="Taesung Park" loading="lazy"><a href="https://taesung.me/">Taesung Park (Reve)</a>&mdash;Controllable Image Generation</td>
                     <td></td>
                 </tr>
                 <tr>
                     <td></td>
                     <td>12:00</td>
-                    <td><a href="https://www.sainingxie.com/">Saining Xie (New York University, AMI Labs)</a>&mdash;Representations and World Models</td>
+                    <td><img class="speaker-thumb" src="images/speakers/2026/xie.jpg" alt="Saining Xie" loading="lazy"><a href="https://www.sainingxie.com/">Saining Xie (New York University, AMI Labs)</a>&mdash;Representations and World Models</td>
                     <td>
                         <a href="https://bsky.app/profile/saining.bsky.social"><img src="images/logos/Bluesky_Logo.svg" width=18px></a>
                         <a href="https://x.com/sainingxie"><img src="images/logos/X_logo_black.svg" width=18px></a>
@@ -429,10 +467,11 @@
 
         <div class="container text-center">
             <hr>
-            <img src="images/famous/cat4d.jpg" width="21%" style="padding: 1em 0em 1em 0em">
-            <img src="images/famous/meta_assetgen.jpg" width="35%" style="padding: 1em 0em 1em 0em">
-            <img src="images/famous/dreamfusion.jpg" width="35%" style="padding: 1em 0em 1em 0em">
-            <br>
+            <div class="showcase">
+                <img class="showcase-item" src="images/famous/cat4d.jpg" alt="Cat4D by Google, 2024" loading="lazy">
+                <img class="showcase-item" src="images/famous/meta_assetgen.jpg" alt="AssetGen by Meta, 2024" loading="lazy">
+                <img class="showcase-item" src="images/famous/dreamfusion.jpg" alt="DreamFusion by Google, 2022" loading="lazy">
+            </div>
             <em>Cat4D (Google, 2024), AssetGen (Meta, 2024), DreamFusion (Google, 2022).</em>
         </div>
 
@@ -558,10 +597,11 @@
 
     <div class="container text-center">
         <hr>
-        <img src="images/famous/dall-e2.jpg" width="22%" style="padding: 1em 0em 1em 0em">
-        <img src="images/famous/imagen.jpg" width="22%" style="padding: 1em 0em 1em 0em">
-        <img src="images/famous/gaugan2.jpg" width="38%" style="padding: 1em 0em 1em 0em">
-        <br>
+        <div class="showcase">
+            <img class="showcase-item" src="images/famous/dall-e2.jpg" alt="DALL-E 2 by OpenAI, 2022" loading="lazy">
+            <img class="showcase-item" src="images/famous/imagen.jpg" alt="Imagen by Google, 2022" loading="lazy">
+            <img class="showcase-item" src="images/famous/gaugan2.jpg" alt="GauGAN2 by NVIDIA, 2021" loading="lazy">
+        </div>
         <em>Dall-E 2 (OpenAI, 2022), Imagen (Google, 2022), GauGAN2 (NVIDIA, 2021).</em>
     </div>
 
@@ -598,21 +638,8 @@
         </div>
     </footer>
 
-    <!-- Javascript to control YouTube player-->
-    <script>
-        // From https://developers.google.com/youtube/iframe_api_reference
-        document.addEventListener("DOMContentLoaded", function(event) {
-            var tag = document.createElement('script');
-            tag.src = "https://www.youtube.com/iframe_api";
-            var firstScriptTag = document.getElementsByTagName('script')[0];
-            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-        });
+    <!-- Bootstrap 5 JS bundle (includes Popper; no jQuery needed) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 
-        var videoplayer;
-        function onYouTubeIframeAPIReady() {
-            videoplayer = new YT.Player('videoplayer', {width: '800', height: '450', videoId: '3daTIaXxMWw'});
-        }
-    </script>
-    
   </body>
 </html>

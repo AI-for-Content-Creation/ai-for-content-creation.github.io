@@ -6,7 +6,7 @@
 {% assign board = item.poster_board | default: "" | strip %}
 
 {% if board != "" and include.show_board != false %}
-    <span class="badge badge-secondary" style="font-weight:600;">Board {{ board }}</span>
+    <span class="badge bg-secondary" style="font-weight:600;">Board {{ board }}</span>
 {% endif %}
 {% if arxiv != "" %}
     <a href="{{ arxiv }}">{{ item.title }}</a>

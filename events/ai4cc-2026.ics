@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//AI for Content Creation//Workshop//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ai4cc-2026@ai-for-content-creation.github.io
+DTSTAMP:20260529T000000Z
+DTSTART:20260603T142500Z
+DTEND:20260603T183000Z
+SUMMARY:AI for Content Creation Workshop @ CVPR 2026
+LOCATION:Room 610/612, Colorado Convention Center, Denver, CO, USA
+URL:https://ai-for-content-creation.github.io/
+DESCRIPTION:The AI for Content Creation workshop at CVPR 2026: invited talks, papers, and posters on generative models for images, video, and 3D. https://ai-for-content-creation.github.io/
+END:VEVENT
+END:VCALENDAR
