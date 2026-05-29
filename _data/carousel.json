@@ -110,12 +110,5 @@
     "authors": "Cha et al.",
     "title": "Toward High-quality Few-shot Font Generation with Dual Memory",
     "year": 2020
-  },
-  {
-    "image": "./images/papers/sylvain_ai4cc2020_object-centric_image_generation.jpg",
-    "alt": "Object-Centric Image Generation from Layouts",
-    "authors": "Sylvain et al.",
-    "title": "Object-Centric Image Generation from Layouts",
-    "year": 2020
   }
 ]
