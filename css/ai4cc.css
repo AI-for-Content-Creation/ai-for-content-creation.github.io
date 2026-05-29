@@ -48,19 +48,34 @@ p {
 .showcase {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 1.25rem 1.75rem;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     margin: 1.5rem 0 0.5rem;
 }
 
+.sc-fig {
+    margin: 0;
+    max-width: 340px;
+}
+
 .showcase-item {
-    flex: 1 1 220px;
-    max-width: 360px;
-    height: 200px;
-    object-fit: cover;
+    display: block;
+    max-height: 210px;
+    max-width: 340px;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
     border-radius: 0.5rem;
 }
+
+.showcase-cap {
+    margin-top: 0.45rem;
+    line-height: 1.25;
+}
+
+.sc-title { font-weight: 600; }
+.sc-credit { font-size: 0.85em; color: #777; }
 
 /* ---- Organizers: horizontal inline-flow list ---- */
 .organizers {

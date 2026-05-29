@@ -192,11 +192,8 @@
     <div class="container text-center">
         <hr>
         <div class="showcase">
-            <video class="showcase-item" src="images/famous/adobe_firefly.mp4" autoplay loop muted playsinline aria-label="Firefly Video by Adobe, 2025"></video>
-            <img class="showcase-item" src="images/famous/genie2.webp" alt="Genie 2 by DeepMind, 2024" loading="lazy">
-            <img class="showcase-item" src="images/famous/sora.jpg" alt="SORA by OpenAI, 2024" loading="lazy">
+        {% for item in site.data.showcase.strip1 %}{% include showcaseitem.html item=item %}{% endfor %}
         </div>
-        <em>Firefly Video (Adobe, 2025), Genie 2 (DeepMind, 2024), SORA (OpenAI, 2024).</em>
     </div>
 
     <div class="container" id="schedule">
@@ -371,11 +368,8 @@
         <div class="container text-center">
             <hr>
             <div class="showcase">
-                <img class="showcase-item" src="images/famous/cat4d.jpg" alt="Cat4D by Google, 2024" loading="lazy">
-                <img class="showcase-item" src="images/famous/meta_assetgen.jpg" alt="AssetGen by Meta, 2024" loading="lazy">
-                <img class="showcase-item" src="images/famous/dreamfusion.jpg" alt="DreamFusion by Google, 2022" loading="lazy">
+            {% for item in site.data.showcase.strip2 %}{% include showcaseitem.html item=item %}{% endfor %}
             </div>
-            <em>Cat4D (Google, 2024), AssetGen (Meta, 2024), DreamFusion (Google, 2022).</em>
         </div>
 
         <!-- <br><br> -->
@@ -600,11 +594,8 @@
     <div class="container text-center">
         <hr>
         <div class="showcase">
-            <img class="showcase-item" src="images/famous/dall-e2.jpg" alt="DALL-E 2 by OpenAI, 2022" loading="lazy">
-            <img class="showcase-item" src="images/famous/imagen.jpg" alt="Imagen by Google, 2022" loading="lazy">
-            <img class="showcase-item" src="images/famous/gaugan2.jpg" alt="GauGAN2 by NVIDIA, 2021" loading="lazy">
+        {% for item in site.data.showcase.strip3 %}{% include showcaseitem.html item=item %}{% endfor %}
         </div>
-        <em>Dall-E 2 (OpenAI, 2022), Imagen (Google, 2022), GauGAN2 (NVIDIA, 2021).</em>
     </div>
 
     <div class="container" id="previousworkshops">

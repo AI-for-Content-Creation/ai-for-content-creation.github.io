@@ -1,0 +1,70 @@
+# Notable generative-AI works whose creators appeared at a past AI4CC workshop
+# (as an invited speaker, panelist, or organizer). These render as the image
+# strips on the homepage. Each item is labelled "<title> (<year>)" where <year>
+# is the AI4CC year it was connected to, plus a credit line tying it to AI4CC.
+#
+# Fields:
+#   image        path to the graphic (jpg/png/webp/mp4)
+#   video        true if `image` is a video (optional)
+#   title        work name (shown in the label)
+#   year         AI4CC year the creator appeared
+#   who          person who presented / organized
+#   affiliation  their org
+#   role         speaker | panelist | organizer  (rendered as "AI4CC <role>")
+#
+# To change a strip, edit the lists below — the homepage renders them automatically.
+
+strip1:
+  - image: images/famous/adobe_firefly.mp4
+    video: true
+    title: Adobe Firefly
+    year: 2024
+    who: Jingwan (Cynthia) Lu
+    affiliation: Adobe
+    role: panelist
+  - image: images/famous/genie2.webp
+    title: Genie 2
+    year: 2024
+    who: Jack Parker-Holder
+    affiliation: DeepMind
+    role: speaker
+  - image: images/famous/sora.jpg
+    title: SORA
+    year: 2024
+    who: Tim Brooks
+    affiliation: OpenAI
+    role: speaker
+
+strip2:
+  - image: images/famous/triposr.jpg
+    title: TripoSR
+    year: 2025
+    who: Mark Boss
+    affiliation: Stability AI
+    role: speaker
+  - image: images/famous/dreamfusion.jpg
+    title: DreamFusion
+    year: 2023
+    who: Ben Mildenhall
+    affiliation: Google
+    role: speaker
+
+strip3:
+  - image: images/famous/dall-e2.jpg
+    title: DALL·E 2
+    year: 2022
+    who: Aditya Ramesh
+    affiliation: OpenAI
+    role: speaker
+  - image: images/famous/imagen.jpg
+    title: Imagen
+    year: 2022
+    who: Chitwan Saharia
+    affiliation: Google
+    role: speaker
+  - image: images/famous/gaugan2.jpg
+    title: GauGAN2
+    year: 2022
+    who: Ming-Yu Liu
+    affiliation: NVIDIA
+    role: organizer

@@ -1,0 +1,12 @@
+{% assign it = include.item %}
+<figure class="sc-fig">
+  {% if it.video %}
+  <video class="showcase-item" src="{{ it.image }}" autoplay loop muted playsinline aria-label="{{ it.title }}"></video>
+  {% else %}
+  <img class="showcase-item" src="{{ it.image }}" alt="{{ it.title }}" loading="lazy">
+  {% endif %}
+  <figcaption class="showcase-cap">
+    <span class="sc-title">{{ it.title }} ({{ it.year }})</span><br>
+    <span class="sc-credit">{{ it.who }} ({{ it.affiliation }}) · AI4CC {{ it.role }}</span>
+  </figcaption>
+</figure>
