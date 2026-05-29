@@ -94,6 +94,13 @@ p {
 }
 
 /* ---- Carousel: caption + dots sit BELOW the image (no overlay) ---- */
+/* Cap the carousel width to roughly the image size so the prev/next
+   arrows hug the content instead of the full container edges. */
+#carouselTop {
+    max-width: 700px;
+    margin-inline: auto;
+}
+
 .carousel-img {
     height: 300px;
     width: auto;
@@ -140,7 +147,7 @@ p {
 .carousel-control-prev,
 .carousel-control-next {
     height: 300px;
-    width: 8%;
+    width: 46px;
 }
 
 .carousel-control-prev-icon,
