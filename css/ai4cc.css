@@ -78,20 +78,20 @@ p {
 }
 
 .paper-authors {
-    margin-top: 0.1rem;
+    margin-top: 0.15rem;
+    padding-left: 1.4rem;          /* hanging indent under the title */
     font-size: 0.9em;
     color: #666;
 }
 
 .paper-meta {
+    display: flex;                 /* gap-separated links, no pseudo-element dots */
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.1rem 0.9rem;
     margin-top: 0.2rem;
+    padding-left: 1.4rem;
     font-size: 0.82em;
-}
-
-.paper-meta > * + *::before {   /* separators between meta items */
-    content: "·";
-    margin: 0 0.45rem;
-    color: #bbb;
 }
 
 .paper-board {
@@ -100,6 +100,15 @@ p {
     border-radius: 0.25rem;
     padding: 0 0.4rem;
     white-space: nowrap;
+}
+
+/* Section headers stand out so the groups are easy to scan */
+#acceptedpapers h5 {
+    margin-top: 1.75rem;
+    padding-bottom: 0.3rem;
+    color: #a31f33;
+    font-weight: 600;
+    border-bottom: 1px solid #efe0e3;
 }
 
 /* ---- Consistent showcase image galleries ---- */
