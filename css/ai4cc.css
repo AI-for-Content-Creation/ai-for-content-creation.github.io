@@ -104,9 +104,9 @@ p {
 #acceptedpapers h5 {
     margin-top: 1.75rem;
     padding-bottom: 0.3rem;
-    color: #a31f33;
+    color: #212529;
     font-weight: 600;
-    border-bottom: 1px solid #efe0e3;
+    border-bottom: 1px solid #e0e0e0;
 }
 
 /* ---- Consistent showcase image galleries ---- */
@@ -126,12 +126,12 @@ p {
 
 .showcase-item {
     display: block;
-    max-height: 210px;
-    max-width: 340px;
+    height: 200px;            /* uniform height so the labels line up */
     width: auto;
-    height: auto;
+    max-width: 400px;
     margin: 0 auto;
     border-radius: 0.5rem;
+    object-fit: contain;
 }
 
 .showcase-cap {
