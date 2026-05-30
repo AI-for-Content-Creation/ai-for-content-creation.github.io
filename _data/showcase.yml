@@ -75,3 +75,9 @@ strip3:
     who: Ming-Yu Liu
     affiliation: NVIDIA
     role: organizer
+  - image: images/papers/jahn_ai4cc2021_high-res-complex-transformers.jpg
+    title: High-Res Scene Synthesis
+    year: 2021
+    who: Jahn, Rombach, Ommer
+    affiliation: Heidelberg
+    role: Best Paper
