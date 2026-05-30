@@ -15,6 +15,13 @@
 # To change a strip, edit the lists below — the homepage renders them automatically.
 
 strip1:
+  - image: images/famous/reve.mp4
+    video: true
+    title: Reve
+    year: 2026
+    who: Taesung Park
+    affiliation: Reve
+    role: speaker
   - image: images/famous/adobe_firefly.mp4
     video: true
     title: Adobe Firefly
@@ -27,13 +34,6 @@ strip1:
     year: 2024
     who: Jack Parker-Holder
     affiliation: DeepMind
-    role: speaker
-  - image: images/famous/reve.mp4
-    video: true
-    title: Reve
-    year: 2026
-    who: Taesung Park
-    affiliation: Reve
     role: speaker
 
 strip2:
