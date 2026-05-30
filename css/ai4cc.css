@@ -51,7 +51,7 @@ p {
 
 .paper-list .paper {
     margin: 0;
-    padding: 0.7rem 0;
+    padding: 0.7rem 0 0.7rem 1.5rem;   /* indent the whole entry */
     border-bottom: 1px solid #ececec;
 }
 
@@ -79,7 +79,6 @@ p {
 
 .paper-authors {
     margin-top: 0.15rem;
-    padding-left: 1.4rem;          /* hanging indent under the title */
     font-size: 0.9em;
     color: #666;
 }
@@ -90,7 +89,6 @@ p {
     align-items: center;
     gap: 0.1rem 0.9rem;
     margin-top: 0.2rem;
-    padding-left: 1.4rem;
     font-size: 0.82em;
 }
 
