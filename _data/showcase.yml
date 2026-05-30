@@ -28,11 +28,12 @@ strip1:
     who: Jack Parker-Holder
     affiliation: DeepMind
     role: speaker
-  - image: images/famous/sora.jpg
-    title: SORA
-    year: 2024
-    who: Tim Brooks
-    affiliation: OpenAI
+  - image: images/famous/reve.mp4
+    video: true
+    title: Reve
+    year: 2026
+    who: Taesung Park
+    affiliation: Reve
     role: speaker
 
 strip2:
@@ -47,6 +48,12 @@ strip2:
     year: 2023
     who: Ben Mildenhall
     affiliation: Google
+    role: speaker
+  - image: images/famous/sora.jpg
+    title: SORA
+    year: 2024
+    who: Tim Brooks
+    affiliation: OpenAI
     role: speaker
 
 strip3:
