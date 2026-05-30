@@ -249,13 +249,11 @@
                     <td></td>
                     <td>11:00</td>
                     <td>Orals
-                        <ul class="noindent">
+                        <div class="paper-list">
                         {% for item in site.data.papers_2026 %}
-                            {% if item.decision == 'Accept (Oral)' %}
-                                <li> {% include paperitem.html item=item show_board=false %} </li>
-                            {% endif %}
+                            {% if item.decision == 'Accept (Oral)' %}{% include paperitem.html item=item show_board=false %}{% endif %}
                         {% endfor %}
-                        </ul>
+                        </div>
                     </td>
                     <td></td>
                 </tr>
@@ -565,30 +563,24 @@
         <h3>2026 Accepted Papers</h3>
         <p>Congratulations to all accepted authors!</p>
         <h5>Oral presentations</h5>
-        <ol>
+        <div class="paper-list">
         {% for item in site.data.papers_2026 %}
-            {% if item.decision == 'Accept (Oral)' %}
-                <li> {% include paperitem.html item=item %} </li>
-            {% endif %}
+            {% if item.decision == 'Accept (Oral)' %}{% include paperitem.html item=item %}{% endif %}
         {% endfor %}
-        </ol>
-        <h5>Poster presentations</h5>
-        <ol>
+        </div>
+        <h5 class="mt-4">Poster presentations</h5>
+        <div class="paper-list">
         {% for item in site.data.papers_2026 %}
-            {% if item.decision == 'Accept (Poster)' and item.accepted_elsewhere != 'Yes' %}
-                <li> {% include paperitem.html item=item %} </li>
-            {% endif %}
+            {% if item.decision == 'Accept (Poster)' and item.accepted_elsewhere != 'Yes' %}{% include paperitem.html item=item %}{% endif %}
         {% endfor %}
-        </ol>
-        <h5>Papers accepted at other venues</h5>
+        </div>
+        <h5 class="mt-4">Papers accepted at other venues</h5>
         <p>We also welcome these recently published works for poster presentation.</p>
-        <ol>
+        <div class="paper-list">
         {% for item in site.data.papers_2026 %}
-            {% if item.accepted_elsewhere == 'Yes' %}
-                <li> {% include paperitem.html item=item %} </li>
-            {% endif %}
+            {% if item.accepted_elsewhere == 'Yes' %}{% include paperitem.html item=item %}{% endif %}
         {% endfor %}
-        </ol>
+        </div>
         <p style="color: gray; font-size: 80%; text-align: right;"><em>Please email Thao (thao.nguyen@wisc.edu) to add/edit paper arXiv or project pages. Thank you!</em></p>
     </div>
 

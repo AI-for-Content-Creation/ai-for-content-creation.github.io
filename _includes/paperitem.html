@@ -1,27 +1,11 @@
 {% assign authors = item.authors | split: "|" %}
-
 {% assign arxiv = item.arXiv | default: "" | strip %}
 {% assign webpage = item.webpage | default: "" | strip %}
 {% assign venue = item.publication_conference_if_published | default: "" | strip %}
 {% assign board = item.poster_board | default: "" | strip %}
-
-{% if board != "" and include.show_board != false %}
-    <span class="badge bg-secondary" style="font-weight:600;">Board {{ board }}</span>
-{% endif %}
-{% if arxiv != "" %}
-    <a href="{{ arxiv }}">{{ item.title }}</a>
-{% else %}
-    {{ item.title }}
-{% endif %}
-<br>
-{% for author in authors %}
-    {{ author }}{% unless forloop.last %},{% endunless %}
-{% endfor %}
-
-{% if webpage != "" %}
-    <a href="{{ webpage }}">[{{ webpage }}]</a>
-{% endif %}
-
-{% if venue != "" %}
-&mdash; {{ venue }}
-{% endif %}
+{% assign show_board = board != "" and include.show_board != false %}
+<div class="paper">
+  <div class="paper-title">{% if arxiv != "" %}<a href="{{ arxiv }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}{% if venue != "" %}<span class="paper-venue">{{ venue }}</span>{% endif %}</div>
+  <div class="paper-authors">{% for author in authors %}{{ author | strip }}{% unless forloop.last %}, {% endunless %}{% endfor %}</div>
+  {% if arxiv != "" or webpage != "" or show_board %}<div class="paper-meta">{% if arxiv != "" %}<a href="{{ arxiv }}">arXiv</a>{% endif %}{% if webpage != "" %}<a href="{{ webpage }}">Project page</a>{% endif %}{% if show_board %}<span class="paper-board">Board {{ board }}</span>{% endif %}</div>{% endif %}
+</div>
