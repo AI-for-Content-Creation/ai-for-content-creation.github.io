@@ -538,9 +538,9 @@
     </div> -->
     <div class="container" id="awards">
         <hr>
-        <h3>2026 Awards</h3>
+        <h3>2026 Awards 🏆</h3>
         {% for item in site.data.papers_2026 %}{% if item.award == "bestpaper" %}
-        <h5 class="mt-3">🏆 Best Paper</h5>
+        <h5 class="mt-3">Best Paper</h5>
         <div class="paper-list">{% include paperitem.html item=item show_award=false %}</div>
         {% endif %}{% endfor %}
         {% for item in site.data.papers_2026 %}{% if item.award == "bestpaperrunnerup" %}
