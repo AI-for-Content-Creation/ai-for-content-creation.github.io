@@ -77,6 +77,20 @@ p {
     border-radius: 0.25rem;
 }
 
+.paper-award {
+    display: inline-block;
+    margin-left: 0.45rem;
+    padding: 0 0.4rem;
+    font-size: 0.72em;
+    font-weight: 600;
+    white-space: nowrap;
+    vertical-align: middle;
+    color: #7a5c00;
+    background: #fff3cd;
+    border: 1px solid #ffe39a;
+    border-radius: 0.25rem;
+}
+
 .paper-authors {
     margin-top: 0.15rem;
     font-size: 0.9em;

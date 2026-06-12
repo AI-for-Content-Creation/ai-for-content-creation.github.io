@@ -541,11 +541,11 @@
         <h3>2026 Awards</h3>
         {% for item in site.data.papers_2026 %}{% if item.award == "bestpaper" %}
         <h5 class="mt-3">🏆 Best Paper</h5>
-        <div class="paper-list">{% include paperitem.html item=item %}</div>
+        <div class="paper-list">{% include paperitem.html item=item show_award=false %}</div>
         {% endif %}{% endfor %}
         {% for item in site.data.papers_2026 %}{% if item.award == "bestpaperrunnerup" %}
         <h5 class="mt-4">Best Paper Runner-up</h5>
-        <div class="paper-list">{% include paperitem.html item=item %}</div>
+        <div class="paper-list">{% include paperitem.html item=item show_award=false %}</div>
         {% endif %}{% endfor %}
     </div>
 
