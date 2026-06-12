@@ -629,12 +629,6 @@
     <div class="container" id="schedule">
         <hr>
         <h3>2025 Schedule</h3>
-        
-        <!--<h3>2025 Schedule&mdash;<a href="Coming Soon">Video Recording</a></h3>
-        
-        <div id="videoplayer"></div>
-        <p><em>Click ▶ to jump to each talk!</em></p>
-        -->
 
         Morning session:<br>
         
@@ -2683,21 +2677,5 @@
         </div>
     </footer>
 
-    <!-- Javascript to control YouTube player-->
-    <script>
-        // From https://developers.google.com/youtube/iframe_api_reference
-        document.addEventListener("DOMContentLoaded", function(event) {
-            var tag = document.createElement('script');
-            tag.src = "https://www.youtube.com/iframe_api";
-            var firstScriptTag = document.getElementsByTagName('script')[0];
-            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-        });
-
-        var videoplayer;
-        function onYouTubeIframeAPIReady() {
-            videoplayer = new YT.Player('videoplayer', {width: '800', height: '450', videoId: '3daTIaXxMWw'});
-        }
-    </script>
-    
   </body>
 </html>
