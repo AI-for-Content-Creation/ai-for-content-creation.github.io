@@ -113,11 +113,9 @@
             <li class="nav-item">
                 <a class="nav-link link-primary" href="#summary">Summary</a>
             </li>
-            <!--
             <li class="nav-item">
                 <a class="nav-link link-primary" href="#awards">Awards</a>
             </li>
-            -->
             <li class="nav-item">
                 <a class="nav-link link-primary" href="#schedule">Schedule</a>
             </li>
@@ -538,24 +536,18 @@
         <hr>
         <h1>2025</h1>
     </div> -->
- <!-- THIS IS BLOCK FOR AWARDS 2026 -->
-  <!-- CAN BE UNCOMMENTED IF WE HAVE AWARDS FOR 2026 -->
-    <!-- <div class="container" id="awards">
+    <div class="container" id="awards">
         <hr>
         <h3>2026 Awards</h3>
-        <ul>
-        {% for item in site.data.papers_2026 %}
-            {% if item.award == "bestpaper" %}
-                <li><h5>Best paper</h5> {% include paperitem.html item=item %}</li><br>
-            {% endif %}
-        {% endfor %}
-        {% for item in site.data.papers_2026 %}
-            {% if item.award == "bestpresentation" %}
-                <li><h5>Best presentation (shared)</h5> {% include paperitem.html item=item %}</li><br>
-            {% endif %}
-        {% endfor %}
-        </ul>
-    </div> -->
+        {% for item in site.data.papers_2026 %}{% if item.award == "bestpaper" %}
+        <h5 class="mt-3">🏆 Best Paper</h5>
+        <div class="paper-list">{% include paperitem.html item=item %}</div>
+        {% endif %}{% endfor %}
+        {% for item in site.data.papers_2026 %}{% if item.award == "bestpaperrunnerup" %}
+        <h5 class="mt-4">Best Paper Runner-up</h5>
+        <div class="paper-list">{% include paperitem.html item=item %}</div>
+        {% endif %}{% endfor %}
+    </div>
 
 
     <div class="container" id="acceptedpapers">
