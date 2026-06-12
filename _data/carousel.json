@@ -1,5 +1,19 @@
 [
   {
+    "image": "./images/papers/ai4cc2026_fan_refdecoder.jpg",
+    "alt": "RefDecoder: Enhancing Visual Generation with Conditional Video Decoding",
+    "authors": "Xiang Fan et al.",
+    "title": "RefDecoder: Enhancing Visual Generation with Conditional Video Decoding",
+    "year": 2026
+  },
+  {
+    "image": "./images/papers/ai4cc2026_du_teaching-agent-sketch.jpg",
+    "alt": "Teaching an Agent to Sketch One Part at a Time",
+    "authors": "Xiaodan Du et al.",
+    "title": "Teaching an Agent to Sketch One Part at a Time",
+    "year": 2026
+  },
+  {
     "image": "./images/papers/ai4cc2025_cong_videolifter.jpg",
     "alt": "VideoLifter: Lifting Videos to 3D with Fast Hierarchical Stereo Alignment",
     "authors": "Wenyan Cong et al.",
