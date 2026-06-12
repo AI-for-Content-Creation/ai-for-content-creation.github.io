@@ -197,7 +197,16 @@
     <div class="container" id="schedule">
         <hr>
         <h3>2026 Schedule</h3>
-
+{% if site.session_video_id and site.session_video_id != "" %}
+        <h5 class="mt-3">Session Recording</h5>
+        <div class="ratio ratio-16x9 mx-auto my-3" style="max-width: 820px;">
+            <iframe src="https://www.youtube-nocookie.com/embed/{{ site.session_video_id }}"
+                    title="AI for Content Creation 2026 — session recording"
+                    frameborder="0" loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+{% endif %}
         <p><em>All times in MDT (Mountain Daylight Time, UTC-6) &mdash; Room 610/612, Colorado Convention Center, Denver, CO, USA</em></p>
         <table class="table table-sm table-striped">
             <thead>
@@ -277,14 +286,6 @@
                 </tr>
             </tbody>
         </table>
-        <!-- <h3>2026 Schedule&mdash;<a href="Coming Soon">Video Recording</a></h3> -->
-        
-        <!-- <div id="videoplayer"></div>
-        <p><em>Click ▶ to jump to each talk!</em></p>
-       
-
-        Morning session:<br> -->
-        
 
         <!-- <table class="table table-sm table-striped">
             <thead>
