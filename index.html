@@ -198,13 +198,16 @@
         <hr>
         <h3>2026 Schedule</h3>
 {% if site.session_video_id and site.session_video_id != "" %}
-        <h5 class="mt-3">Session Recording</h5>
-        <div class="ratio ratio-16x9 mx-auto my-3" style="max-width: 820px;">
-            <iframe src="https://www.youtube-nocookie.com/embed/{{ site.session_video_id }}"
-                    title="AI for Content Creation 2026 — session recording"
-                    frameborder="0" loading="lazy"
+        <div id="session-recording" class="my-3" data-video="{{ site.session_video_id }}" data-release="{{ site.video_release_date | date: '%Y-%m-%dT00:00:00' }}">
+          <h5 class="mt-3">Session Recording</h5>
+          <p class="js-session-pending text-muted"><em>The session recording will be available here from {{ site.video_release_date | date: "%B %-d, %Y" }}.</em></p>
+          <div class="js-session-player ratio ratio-16x9 mx-auto" style="max-width: 820px; display: none;">
+            <iframe id="session-iframe" title="AI for Content Creation 2026 &mdash; session recording"
+                    src="about:blank" frameborder="0" loading="lazy"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <p class="js-session-hint text-muted small mt-2" style="display: none;">Use the <span class="text-primary">&#9654;</span> buttons below to jump to each talk.</p>
         </div>
 {% endif %}
         <p><em>All times in MDT (Mountain Daylight Time, UTC-6) &mdash; Room 610/612, Colorado Convention Center, Denver, CO, USA</em></p>
@@ -225,7 +228,7 @@
                     <td>👋</td>
                 </tr>
                 <tr>
-                    <td></td>
+                    <td><button type="button" class="btn btn-sm btn-outline-primary py-0 px-1 chapter-jump" hidden onclick="aiccSeek(0)" title="Jump to this talk in the recording" aria-label="Jump to this talk in the recording">&#9654;</button></td>
                     <td>8:30</td>
                     <td><img class="speaker-thumb" src="images/speakers/2026/hanocka.jpg" alt="Rana Hanocka" loading="lazy"><a href="https://people.cs.uchicago.edu/~ranahanocka/">Rana Hanocka (University of Chicago)</a>&mdash;3D Generation and Editing</td>
                     <td>
@@ -234,13 +237,13 @@
                     </td>
                 </tr>
                 <tr>
-                    <td></td>
+                    <td><button type="button" class="btn btn-sm btn-outline-primary py-0 px-1 chapter-jump" hidden onclick="aiccSeek(1720)" title="Jump to this talk in the recording" aria-label="Jump to this talk in the recording">&#9654;</button></td>
                     <td>9:00</td>
                     <td><img class="speaker-thumb" src="images/speakers/2026/yuille.jpg" alt="Alan Yuille" loading="lazy"><a href="https://www.cs.jhu.edu/~ayuille1/index.html">Alan Yuille (Johns Hopkins University)</a>&mdash;Building Representations</td>
                     <td></td>
                 </tr>
                 <tr>
-                    <td></td>
+                    <td><button type="button" class="btn btn-sm btn-outline-primary py-0 px-1 chapter-jump" hidden onclick="aiccSeek(3523)" title="Jump to this talk in the recording" aria-label="Jump to this talk in the recording">&#9654;</button></td>
                     <td>9:30</td>
                     <td><img class="speaker-thumb" src="images/speakers/2026/theobalt.jpg" alt="Christian Theobalt" loading="lazy"><a href="https://people.mpi-inf.mpg.de/~theobalt/">Christian Theobalt (Max-Planck-Institute for Informatics)</a>&mdash;4D Humans</td>
                     <td></td>
@@ -257,7 +260,7 @@
                     <td>Orals
                         <div class="paper-list">
                         {% for item in site.data.papers_2026 %}
-                            {% if item.decision == 'Accept (Oral)' %}{% include paperitem.html item=item show_board=false %}{% endif %}
+                            {% if item.decision == 'Accept (Oral)' %}{% include paperitem.html item=item show_board=false jump=true %}{% endif %}
                         {% endfor %}
                         </div>
                     </td>
@@ -270,7 +273,7 @@
                     <td></td>
                 </tr>
                 <tr>
-                    <td></td>
+                    <td><button type="button" class="btn btn-sm btn-outline-primary py-0 px-1 chapter-jump" hidden onclick="aiccSeek(7915)" title="Jump to this talk in the recording" aria-label="Jump to this talk in the recording">&#9654;</button></td>
                     <td>12:00</td>
                     <td><img class="speaker-thumb" src="images/speakers/2026/xie.jpg" alt="Saining Xie" loading="lazy"><a href="https://www.sainingxie.com/">Saining Xie (New York University, AMI Labs)</a>&mdash;Representations and World Models</td>
                     <td>
@@ -618,6 +621,38 @@
 
     <!-- Bootstrap 5 JS bundle (includes Popper; no jQuery needed) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+{% if site.session_video_id and site.session_video_id != "" %}
+    <!-- Session recording: embargo gate + jump-to-talk. Player and the ▶ buttons stay
+         hidden until video_release_date, then reveal themselves client-side. -->
+    <script>
+      (function () {
+        var box = document.getElementById('session-recording');
+        if (!box) return;
+        var vid = box.dataset.video;
+        var release = new Date(box.dataset.release);
+        var iframe = document.getElementById('session-iframe');
+        var player = box.querySelector('.js-session-player');
+        var pending = box.querySelector('.js-session-pending');
+        var hint = box.querySelector('.js-session-hint');
+        var base = 'https://www.youtube-nocookie.com/embed/' + vid + '?rel=0';
 
+        window.aiccSeek = function (sec) {
+          iframe.src = base + '&start=' + sec + '&autoplay=1';
+          player.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        };
+
+        if (!isNaN(release.getTime()) && new Date() >= release) {
+          pending.style.display = 'none';
+          player.style.display = '';
+          if (hint) hint.style.display = '';
+          iframe.src = base;                       // load the player (poster), no autoplay
+          Array.prototype.forEach.call(
+            document.querySelectorAll('.chapter-jump'),
+            function (b) { b.hidden = false; }
+          );
+        }
+      })();
+    </script>
+{% endif %}
   </body>
 </html>

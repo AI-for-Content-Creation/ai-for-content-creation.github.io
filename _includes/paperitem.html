@@ -7,10 +7,11 @@
 {% assign drivepdf = item.pdf | default: "" | strip %}
 {% if drivepdf != "" %}{% assign pdf = drivepdf %}{% elsif arxiv != "" %}{% assign pdf = arxiv | replace: "/abs/", "/pdf/" %}{% else %}{% assign pdf = "" %}{% endif %}
 {% assign supp = item.supplemental | default: "" | strip %}
+{% assign vsec = item.video_seconds | default: "" | strip %}
 {% assign award = item.award | default: "" | strip %}
 {% if award != "" and include.show_award != false %}{% case award %}{% when "bestpaper" %}{% assign awardlabel = "Best Paper" %}{% when "bestpaperrunnerup" %}{% assign awardlabel = "Best Paper Runner-up" %}{% when "bestposter" %}{% assign awardlabel = "Best Poster" %}{% when "bestpresentation" %}{% assign awardlabel = "Best Presentation" %}{% else %}{% assign awardlabel = award %}{% endcase %}{% else %}{% assign awardlabel = "" %}{% endif %}
 <div class="paper">
-  <div class="paper-title">{% if arxiv != "" %}<a href="{{ arxiv }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}{% if awardlabel != "" %}<span class="paper-award">🏆 {{ awardlabel }}</span>{% endif %}{% if venue != "" %}<span class="paper-venue">{{ venue }}</span>{% endif %}</div>
+  <div class="paper-title">{% if include.jump and vsec != "" %}<button type="button" class="btn btn-sm btn-outline-primary py-0 px-1 me-1 chapter-jump" hidden onclick="aiccSeek({{ vsec }})" title="Jump to this talk in the recording" aria-label="Jump to this talk in the recording">&#9654;</button>{% endif %}{% if arxiv != "" %}<a href="{{ arxiv }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}{% if awardlabel != "" %}<span class="paper-award">🏆 {{ awardlabel }}</span>{% endif %}{% if venue != "" %}<span class="paper-venue">{{ venue }}</span>{% endif %}</div>
   <div class="paper-authors">{% for author in authors %}{{ author | strip }}{% unless forloop.last %}, {% endunless %}{% endfor %}</div>
   {% if arxiv != "" or pdf != "" or supp != "" or webpage != "" or show_board %}<div class="paper-meta">{% if arxiv != "" %}<a href="{{ arxiv }}">arXiv</a>{% endif %}{% if pdf != "" %}<a href="{{ pdf }}">PDF</a>{% endif %}{% if supp != "" %}<a href="{{ supp }}">Supplementary</a>{% endif %}{% if webpage != "" %}<a href="{{ webpage }}">Project page</a>{% endif %}{% if show_board %}<span class="paper-board">Board {{ board }}</span>{% endif %}</div>{% endif %}
 </div>

@@ -9,4 +9,8 @@ url: "https://ai-for-content-creation.github.io/" # the base hostname & protocol
 # 2026 session recording: set this to the YouTube video ID once the recording is up.
 # For https://youtu.be/AbCdEf123  or  https://www.youtube.com/watch?v=AbCdEf123  use  session_video_id: "AbCdEf123"
 # Leave empty ("") to hide the player.
-session_video_id: ""
+session_video_id: "ghRMshq5Pwc"
+# Embargo: the player + jump buttons stay hidden until this date (3 months after the
+# conference). Visitors see a "available from <date>" note; it reveals itself on the day.
+# NOTE: keep the YouTube video Unlisted (or Scheduled) until then — this is the real gate.
+video_release_date: "2026-09-03"
